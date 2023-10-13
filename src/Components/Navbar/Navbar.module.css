@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+  box-shadow: 0 0.2rem 0.2rem -0.2rem #000;
+  background-color: #252422;
+}
+
+.navbar-logo--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-logo--wrapper .logo {
+  width: 7.5rem;
+}
+
+.navbar-logo--wrapper p {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Caveat", cursive;
+  color: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-menu .nav-menu--items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Caveat";
+  cursor: pointer;
+}
+
+.nav-login--btn {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 14rem;
+  height: 5rem;
+  border: 1px solid #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* background-color: #01507a; */
+  background-color: rgba(224, 23, 23, 0.4);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14rem;
+  height: 5rem;
+  transform: translate(-1rem, 0.6rem);
+  background-color: rgb(224, 23, 23, 0.85);
+  transition: all 0.3s;
+  z-index: -2;
+}
+
+.btn:hover::after {
+  transform: translate(0);
+}
+
+.btn p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Caveat";
+  color: #fff;
+}
+
+.cart--counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 3.4rem;
+  margin-left: -5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50%;
+  background-color: rgb(224, 23, 23, 0.85);
+}
+
+.icon {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.icon--cart {
+  font-size: 2.75rem;
+  color: #fff;
+}
