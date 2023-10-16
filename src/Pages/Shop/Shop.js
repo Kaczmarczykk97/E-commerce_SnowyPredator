@@ -1,9 +1,11 @@
-import classes from "./Shop.module.css";
+// import classes from "./Shop.module.css";
+
+import Header from "../../Components/Header/Header";
 
 function Shop() {
   return (
-    <div className={classes.wrapper}>
-      <h1>SHOP</h1>
+    <div>
+      <Header />
     </div>
   );
 }
