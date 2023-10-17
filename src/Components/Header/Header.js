@@ -13,10 +13,14 @@ function Header() {
           className={classes["img-new-product"]}
         />
 
-        <div className={classes["textContainer--icon-wrapper"]}>
-          <h2 className={classes["heading--h2"]}>Check our new collection</h2>
-          <img src={headerIcon} alt="occasion icon" />
+        <div className={classes["textContainer--heading"]}>
+          <div className={classes["textContainer--heading-icon-wrapper"]}>
+            <h2 className={classes["heading--h2"]}>New collection</h2>
+            <img src={headerIcon} alt="occasion icon" />
+          </div>
+          <div className={classes.span}>#Snowboard</div>
         </div>
+
         <p className={classes["text--1"]}>
           New snowboarding equipment delivery
         </p>
