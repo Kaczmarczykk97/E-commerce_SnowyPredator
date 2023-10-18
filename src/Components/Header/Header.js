@@ -2,6 +2,7 @@ import classes from "./Header.module.css";
 
 import headerIcon from "../imgs/header-icon.png";
 import snowboard from "../imgs/header_6.png";
+import predatorText from "../imgs/predatorText.png";
 
 function Header() {
   return (
@@ -14,8 +15,9 @@ function Header() {
         />
 
         <div className={classes["textContainer--heading"]}>
+          <h2 className={classes["heading--h2"]}>New</h2>
           <div className={classes["textContainer--heading-icon-wrapper"]}>
-            <h2 className={classes["heading--h2"]}>New collection</h2>
+            <h2 className={classes["heading--h2"]}>collection</h2>
             <img src={headerIcon} alt="occasion icon" />
           </div>
           <div className={classes.span}>#Snowboard</div>
@@ -29,9 +31,14 @@ function Header() {
           available in store
         </p>
 
-        {/* <button className={classes["header--btn"]}>
-          Check new collections
-        </button> */}
+        <button className={classes["header--btn"]}>
+          Start to be
+          <img
+            className={classes["btn--img"]}
+            src={predatorText}
+            alt="text img"
+          />
+        </button>
       </div>
     </div>
   );
