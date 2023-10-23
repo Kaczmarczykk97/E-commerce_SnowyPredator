@@ -7,7 +7,13 @@
   gap: 15rem;
   margin: 0 auto 15rem auto;
   padding: 0 7.5rem;
-  background-color: #e4e3e3;
+  background-image: linear-gradient(
+      rgba(228, 227, 227, 0.2),
+      rgba(228, 227, 227, 0.2)
+    ),
+    url(../imgs/offer_background.png);
+  background-color: rgb(228, 227, 227, 0.75);
+  background-size: cover;
 }
 
 .offer-left {
@@ -16,7 +22,7 @@
   justify-content: center;
 }
 
-.offer-left h1 {
+.offer-left h2 {
   font-size: 5rem;
   font-weight: 600;
   color: #282125;

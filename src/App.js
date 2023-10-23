@@ -7,6 +7,7 @@ import Login from "./Pages/Login/Login";
 import Product from "./Pages/Product/Product";
 
 import "./App.css";
+
 import RootLayout from "./Root";
 
 function App() {

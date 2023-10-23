@@ -1,8 +1,12 @@
+import { useContext } from "react";
+
 import classes from "./Category.module.css";
 
-function Category() {
+function Category(props) {
+  const { allProductsData } = useContext();
+
   return (
-    <div className={classes.wrapper}>
+    <div className={classes["category"]}>
       <h1>CATEGORY</h1>
     </div>
   );

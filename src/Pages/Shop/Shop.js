@@ -3,6 +3,8 @@
 import Header from "../../Components/Header/Header";
 import Popular from "../../Components/Popular/Popular";
 import Offers from "../../Components/Offers/Offers";
+import NewProducts from "../../Components/NewProducts/NewProducts";
+import NewsLetter from "../../Components/NewsLetter/NewsLetter";
 
 function Shop() {
   return (
@@ -10,6 +12,8 @@ function Shop() {
       <Header />
       <Popular />
       <Offers />
+      <NewProducts />
+      <NewsLetter />
     </div>
   );
 }

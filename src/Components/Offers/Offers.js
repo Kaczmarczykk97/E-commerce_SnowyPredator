@@ -6,8 +6,8 @@ function Offers() {
   return (
     <div className={classes.offers}>
       <div className={classes["offer-left"]}>
-        <h1>Exclusive</h1>
-        <h1>Offers For You</h1>
+        <h2>Exclusive</h2>
+        <h2>Offers For You</h2>
         <p>Only on best sellers products</p>
         <button>Check Now</button>
       </div>
