@@ -10,6 +10,11 @@ import "./App.css";
 
 import RootLayout from "./Root";
 
+import snowboarding_banner from "./Components/imgs/Snowboarding_banner.jpg";
+import skiing_banner from "./Components/imgs/Skiing_banner.jpg";
+import accessories_banner from "./Components/imgs/Accessories_banner.jpg";
+import clothes_banner from "./Components/imgs/Clothes_banner.jpg";
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -19,14 +24,30 @@ function App() {
         { path: "/", element: <Shop /> },
         { path: "/cart", element: <Cart /> },
         { path: "/login", element: <Login /> },
-        { path: "/snowboard", element: <Category category="snowboard" /> },
-        { path: "/skiing", element: <Category category="skiing" /> },
-        { path: "/accessories", element: <Category category="accessories" /> },
-        { path: "/clothes", element: <Category category="clothes" /> },
+        {
+          path: "/snowboard",
+          element: (
+            <Category banner={snowboarding_banner} category="snowboard" />
+          ),
+        },
+        {
+          path: "/skiing",
+          element: <Category banner={skiing_banner} category="skiing" />,
+        },
+        {
+          path: "/accessories",
+          element: (
+            <Category banner={accessories_banner} category="accessories" />
+          ),
+        },
+        {
+          path: "/clothes",
+          element: <Category banner={clothes_banner} category="clothes" />,
+        },
         {
           path: "/product",
           element: <Product />,
-          children: [{ path: ":productId", element: <Product /> }],
+          children: [{ path: ":product_ID", element: <Product /> }],
         },
       ],
     },

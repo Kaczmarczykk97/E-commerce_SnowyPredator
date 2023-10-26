@@ -165,7 +165,7 @@ const all_products_data = [
   },
   {
     id: 12,
-    img: "product_12",
+    img: product_12,
     name: "Freestyle Snowboard - Size: 155cm",
     category: "snowboard",
     new_price: 219.99,

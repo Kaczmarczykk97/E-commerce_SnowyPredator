@@ -1,0 +1,156 @@
+.product_display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5rem;
+}
+
+.product_img-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.product_img-container--side_imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  max-width: 10rem;
+}
+
+.product_img-container--side_imgs img {
+  max-height: 15rem;
+  background-image: linear-gradient(
+    rgba(37, 36, 34, 0.2),
+    rgba(37, 36, 34, 0.05)
+  );
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin-bottom: auto;
+}
+
+.product_img-container--side_imgs img:last-child {
+  margin-bottom: 0;
+}
+
+.product_img-container--main_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(37, 36, 34, 0.2),
+    rgba(37, 36, 34, 0.05)
+  );
+  height: 100%;
+  min-width: 35rem;
+}
+
+.product_img-container--main_img img {
+  will-change: transform;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.product_img-container--main_img img:hover {
+  transform: scale(1.1);
+}
+
+.product_info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product_info-container h2 {
+  font-size: 2.75rem;
+  font-weight: 500;
+}
+
+.rating_stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating_stars .icon_star {
+  font-size: 1.75rem;
+}
+
+.rating_stars .rating_amount {
+  font-size: 1.75rem;
+  margin-left: 0.5rem;
+}
+
+.product_price {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.product_price--new {
+  color: #e41936;
+  text-shadow: 1px 1px #282125;
+}
+
+.product_price--old {
+  text-decoration: line-through;
+  color: #282125;
+}
+
+.product_description {
+  font-size: 1.6rem;
+}
+
+.product_select_size {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_select_size h3 {
+  font-size: 2rem;
+}
+
+.product-size {
+  display: flex;
+  gap: 2rem;
+}
+
+.product-size div {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebe6dc;
+  border: 1px solid #282125;
+  font-size: 1.75rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.product-size div:hover {
+  background-color: #282125;
+  color: #e41936;
+}
+
+button {
+  width: 30rem;
+  height: 5.5rem;
+  background-color: #e41936;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  will-change: transform;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #282125;
+  color: #e41936;
+  transform: skew(-10deg);
+}

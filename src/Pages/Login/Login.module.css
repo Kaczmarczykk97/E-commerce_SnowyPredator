@@ -1,9 +1,115 @@
-.wrapper {
-  width: 100%;
-  height: 100vh;
+.login {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: yellowgreen;
-  font-size: 5rem;
+  width: 100%;
+  height: 85vh;
+  padding-top: 10rem;
+  position: relative;
+  background-image: linear-gradient(
+    rgba(37, 36, 34, 0.4),
+    rgba(37, 36, 34, 0.2)
+  );
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 36, 34, 0.4),
+    rgba(37, 36, 34, 0.2)
+  );
+}
+
+.login-container h2 {
+  margin-bottom: 1.2rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px #e41936;
+}
+
+.login-container--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.login-container--form input {
+  height: 6rem;
+  width: 80%;
+  padding-left: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  color: #252422;
+}
+
+.login-container--form input:focus {
+  border: 2px solid #252422;
+  outline: none;
+}
+
+.login-container button {
+  height: 6rem;
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  background-color: #e41936;
+  text-shadow: 2px 2px #252422;
+  cursor: pointer;
+}
+
+.have-account--text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 2px 2px #252422;
+  margin-bottom: 1rem;
+}
+
+.have-account--text span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e41936;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.terms-accept--container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-shadow: 2px 2px #252422;
+  font-size: 1.6rem;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .background-video {
+    width: auto;
+    height: 100%;
+  }
 }

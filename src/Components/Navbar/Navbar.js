@@ -11,8 +11,10 @@ function Navbar() {
   return (
     <div className={classes.navbar}>
       <div className={classes["navbar-logo--wrapper"]}>
-        <img src={logo} className={classes.logo} alt="SnowyPredator's logo" />
-        <p>SnowyPredator</p>
+        <NavLink to="/">
+          <img src={logo} className={classes.logo} alt="SnowyPredator's logo" />
+          <p>SnowyPredator</p>
+        </NavLink>
       </div>
       <ul className={classes["nav-menu"]}>
         <li className={classes["nav-menu--items"]}>

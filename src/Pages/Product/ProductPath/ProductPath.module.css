@@ -1,0 +1,9 @@
+.product_path {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.product_path a {
+  text-decoration: none;
+  color: #000;
+}

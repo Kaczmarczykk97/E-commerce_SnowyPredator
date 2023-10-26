@@ -5,32 +5,36 @@ import product_4 from "./product_4.png";
 
 const popular_products_data = [
   {
-    id: 1,
+    id: 20,
     img: product_1,
-    name: "Jones Snowboard - Blue, All-Mountain, 160cm",
-    new_price: 599.99,
-    old_price: 749.99,
+    name: "Snowboard - All-Mountain, Size: 160cm",
+    category: "snowboard",
+    new_price: 249.99,
+    old_price: 299.99,
   },
   {
-    id: 2,
+    id: 10,
     img: product_2,
-    name: "Ski Helmet - Black, Medium, EN 1077 Certified",
+    name: "Ski Helmet with Visor - ProTech Model",
+    category: "accessories",
     new_price: 79.99,
     old_price: 99.99,
   },
   {
-    id: 3,
+    id: 11,
     img: product_3,
-    name: "Pair of Skis - Freeride, 175cm, Alpine Bindings",
+    name: "All-Mountain Skis - Size: 170cm",
+    category: "skiing",
     new_price: 349.99,
     old_price: 449.99,
   },
   {
-    id: 4,
+    id: 12,
     img: product_4,
-    name: "Burton Snowboard - Black, Freestyle, 155cm",
-    new_price: 499.99,
-    old_price: 599.99,
+    name: "Freestyle Snowboard - Size: 155cm",
+    category: "snowboard",
+    new_price: 219.99,
+    old_price: 279.99,
   },
 ];
 
