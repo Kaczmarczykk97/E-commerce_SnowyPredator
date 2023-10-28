@@ -1,0 +1,79 @@
+.product_description {
+  margin: 10rem 15rem;
+}
+
+.options_tab--container {
+  display: flex;
+  gap: 2px;
+}
+
+.options_tab--option {
+  width: 15rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #282125;
+  font-weight: 500;
+  background-image: linear-gradient(
+    rgba(37, 36, 34, 0.2),
+    rgba(37, 36, 34, 0.05)
+  );
+  border: 1px solid #7c6d76;
+  cursor: pointer;
+}
+
+.options_tab--option.active {
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid #282125;
+  background-color: #e41936;
+  transform: translateY(-0.75rem);
+}
+
+.product_description--text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2px;
+  padding: 5rem 6rem;
+  min-height: 20rem;
+  border: 1px solid #7c6d76;
+}
+
+.product_description--text_container p {
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.tab_content {
+  display: none;
+}
+
+.tab_content--active {
+  display: grid;
+}
+
+.tab_content--2 {
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.tab_content--2 div {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e41936;
+}
+.tab_content--2 div p {
+  font-size: 1.6rem;
+}
+.tab_content--2 div .parameter {
+  font-weight: 600;
+}
