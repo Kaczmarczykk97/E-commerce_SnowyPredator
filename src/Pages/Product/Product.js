@@ -16,7 +16,7 @@ function Product() {
     <div className={classes["product"]}>
       <ProductPath product_data={product_data} />
       <ProductDisplay product_data={product_data} />
-      <ProductDescription />
+      <ProductDescription product_data={product_data} />
     </div>
   );
 }

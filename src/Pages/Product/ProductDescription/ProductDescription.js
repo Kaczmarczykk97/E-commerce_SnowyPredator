@@ -1,9 +1,21 @@
 import { useState } from "react";
 
 import classes from "./ProductDescription.module.css";
+import { BsStarFill } from "react-icons/bs";
 
-function ProductDescription() {
+import random_users_imgs from "../../../Components/imgs/random_users_imgs/random_users_imgs";
+
+function ProductDescription(props) {
   const [activeTab, setActiveTab] = useState("1");
+  const { product_data } = props;
+  console.log(product_data);
+
+  const randomUserImgGenerator = function () {
+    const randomNumber = Math.floor(Math.random() * 17) + 1;
+    return random_users_imgs.find((user) => user.id === randomNumber);
+  };
+
+  console.log(randomUserImgGenerator());
 
   const activeTabHandler = function (e) {
     const current_tab = e.target.getAttribute("data-tab");
@@ -47,66 +59,44 @@ function ProductDescription() {
             activeTab === "1" ? classes["tab_content--active"] : ""
           }`}
         >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            suscipit mi. Nunc nec justo ac ipsum ullamcorper tempor quis quis
-            felis. Duis eget leo vitae sapien ultricies semper ut a libero.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            suscipit mi. Nunc nec justo ac ipsum ullamcorper tempor quis quis
-            felis. Duis eget leo vitae sapien ultricies semper ut a libero.Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            suscipit mi. Nunc nec justo ac ipsum ullamcorper tempor quis quis
-            felis. Duis eget leo vitae sapien ultricies semper ut a libero.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            suscipit mi. Nunc nec justo ac ipsum ullamcorper tempor quis quis
-            felis. Duis eget leo vitae sapien ultricies semper ut a libero.
-          </p>
+          <p>{product_data.description_long}</p>
         </div>
         <div
           className={`${classes["tab_content"]} ${classes["tab_content--2"]} ${
             activeTab === "2" ? classes["tab_content--active"] : ""
           }`}
         >
-          <div>
-            <p className={classes["parameter"]}>Parameter_1:</p>
-            <p>XXX</p>
-          </div>
-          <div>
-            <p className={classes["parameter"]}>Parameter_2:</p>
-            <p>XXX</p>
-          </div>
-          <div>
-            <p className={classes["parameter"]}>Parameter_3:</p>
-            <p>XXX</p>
-          </div>
-          <div>
-            <p className={classes["parameter"]}>Parameter_4:</p>
-            <p>XXX</p>
-          </div>
-
-          <div>
-            <p className={classes["parameter"]}>Parameter_5:</p>
-            <p>XXX</p>
-          </div>
-          <div>
-            <p className={classes["parameter"]}>Parameter_6:</p>
-            <p>XXX</p>
-          </div>
-          <div>
-            <p className={classes["parameter"]}>Parameter_7:</p>
-            <p>XXX</p>
-          </div>
-          <div>
-            <p className={classes["parameter"]}>Parameter_8:</p>
-            <p>XXX</p>
-          </div>
+          {product_data.parameters.map((parameter) => {
+            return (
+              <div>
+                <p className={classes["parameter"]}>{parameter.parameter}:</p>
+                <p>{parameter.value}</p>
+              </div>
+            );
+          })}
         </div>
         <div
           className={`${classes["tab_content"]} ${classes["tab_content--3"]} ${
             activeTab === "3" ? classes["tab_content--active"] : ""
           }`}
         >
-          <p>Reviews</p>
+          {product_data.review.map((rev) => {
+            return (
+              <div className={classes["review"]}>
+                <div className={classes["img_container"]}>
+                  <img src={randomUserImgGenerator().img} alt="anon" />
+                </div>
+                <div className={classes["stars_column"]}>
+                  <p>"{rev.text}"</p>
+                  <div className={classes["stars_container"]}>
+                    {Array.from({ length: rev.rating }, (value, index) => (
+                      <BsStarFill key={index} className={classes["star"]} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

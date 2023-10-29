@@ -5,10 +5,6 @@ import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 function ProductDisplay(props) {
   const { product_data } = props;
 
-  function random_rating_amount() {
-    return Math.trunc(Math.random() * 250) + 1;
-  }
-
   function generateRating() {
     const rating = [];
     let end = false;
@@ -46,7 +42,9 @@ function ProductDisplay(props) {
           {generateRating().map((star, index) => (
             <span key={index}>{star}</span>
           ))}
-          <p className={classes["rating_amount"]}>({random_rating_amount()})</p>
+          <p className={classes["rating_amount"]}>
+            ({product_data.reviews_amount ? product_data.reviews_amount : 0})
+          </p>
         </div>
         <div className={classes["product_price"]}>
           <div className={classes["product_price--new"]}>
@@ -57,9 +55,7 @@ function ProductDisplay(props) {
           </div>
         </div>
         <div className={classes["product_description"]}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-          suscipit mi. Nunc nec justo ac ipsum ullamcorper tempor quis quis
-          felis. Duis eget leo vitae sapien ultricies semper ut a libero.
+          {product_data.description_short}
         </div>
         <div className={classes["product_select_size"]}>
           <h3>Size:</h3>

@@ -66,7 +66,7 @@
   width: 75%;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #e41936;
@@ -76,4 +76,54 @@
 }
 .tab_content--2 div .parameter {
   font-weight: 600;
+  margin-left: 2rem;
+}
+
+.tab_content--3 {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review .img_container {
+  height: 5.5rem;
+  min-width: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(228, 25, 54, 0.7);
+  border-radius: 50%;
+  padding: 0.75rem;
+  border: 2px solid #282125;
+}
+
+.review .img_container img {
+  max-height: 5.5rem;
+  max-width: 5rem;
+}
+
+.review p {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #282125;
+}
+
+.stars_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.review .stars_container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star {
+  font-size: 2rem;
+  color: yellow;
 }
