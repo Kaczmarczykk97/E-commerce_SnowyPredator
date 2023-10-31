@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 import classes from "./Item.module.css";
 
 function Item(props) {
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className={classes.item}>
       <Link to={`/product/${props.id}`}>
-        <img src={props.img} alt="item" />
+        <img src={props.img} alt="item" onClick={scrollTop} />
       </Link>
       <p>{props.name}</p>
       <div className={classes["item-prices"]}>

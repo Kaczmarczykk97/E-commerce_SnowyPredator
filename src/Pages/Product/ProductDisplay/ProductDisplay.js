@@ -1,6 +1,10 @@
+import all_products_data from "../../../Components/imgs/all_products/all_products_data";
 import classes from "./ProductDisplay.module.css";
 
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+
+const clothesSize = ["S", "M", "L", "XL"];
+const equipmentsSize = ["150", "155", "160", "165"];
 
 function ProductDisplay(props) {
   const { product_data } = props;
@@ -60,10 +64,10 @@ function ProductDisplay(props) {
         <div className={classes["product_select_size"]}>
           <h3>Size:</h3>
           <div className={classes["product-size"]}>
-            <div>S</div>
-            <div>M</div>
-            <div>L</div>
-            <div>XL</div>
+            {product_data.category === "accessories" ||
+            product_data.category === "clothes"
+              ? clothesSize.map((size) => <div>{size}</div>)
+              : equipmentsSize.map((size) => <div>{size}</div>)}
           </div>
         </div>
         <button>Add to cart</button>

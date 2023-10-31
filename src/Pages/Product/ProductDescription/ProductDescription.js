@@ -8,14 +8,11 @@ import random_users_imgs from "../../../Components/imgs/random_users_imgs/random
 function ProductDescription(props) {
   const [activeTab, setActiveTab] = useState("1");
   const { product_data } = props;
-  console.log(product_data);
 
   const randomUserImgGenerator = function () {
     const randomNumber = Math.floor(Math.random() * 17) + 1;
     return random_users_imgs.find((user) => user.id === randomNumber);
   };
-
-  console.log(randomUserImgGenerator());
 
   const activeTabHandler = function (e) {
     const current_tab = e.target.getAttribute("data-tab");

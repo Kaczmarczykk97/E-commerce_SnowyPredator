@@ -7,6 +7,7 @@ import ProductDisplay from "./ProductDisplay/ProductDisplay";
 
 import classes from "./Product.module.css";
 import ProductDescription from "./ProductDescription/ProductDescription";
+import RelatedProducts from "./RelatedProducts/RelatedProducts";
 
 function Product() {
   const ctx = useContext(ShopContext);
@@ -17,6 +18,7 @@ function Product() {
       <ProductPath product_data={product_data} />
       <ProductDisplay product_data={product_data} />
       <ProductDescription product_data={product_data} />
+      <RelatedProducts product_data={product_data} />
     </div>
   );
 }
