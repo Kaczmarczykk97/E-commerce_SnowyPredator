@@ -1,13 +1,17 @@
-import all_products_data from "../../../Components/imgs/all_products/all_products_data";
+// import all_products_data from "../../../Components/imgs/all_products/all_products_data";
+import { useContext } from "react";
 import classes from "./ProductDisplay.module.css";
 
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
+import ShopContext from "../../../Context/ShopContext";
 
 const clothesSize = ["S", "M", "L", "XL"];
 const equipmentsSize = ["150", "155", "160", "165"];
 
 function ProductDisplay(props) {
   const { product_data } = props;
+
+  const { addToCart } = useContext(ShopContext);
 
   function generateRating() {
     const rating = [];
@@ -66,11 +70,17 @@ function ProductDisplay(props) {
           <div className={classes["product-size"]}>
             {product_data.category === "accessories" ||
             product_data.category === "clothes"
-              ? clothesSize.map((size) => <div>{size}</div>)
-              : equipmentsSize.map((size) => <div>{size}</div>)}
+              ? clothesSize.map((size, i) => <div key={i}>{size}</div>)
+              : equipmentsSize.map((size, i) => <div key={i}>{size}</div>)}
           </div>
         </div>
-        <button>Add to cart</button>
+        <button
+          onClick={() => {
+            addToCart(product_data.id);
+          }}
+        >
+          Add to cart
+        </button>
       </div>
     </div>
   );

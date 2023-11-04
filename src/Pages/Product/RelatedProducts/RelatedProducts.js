@@ -8,7 +8,7 @@ import classes from "./RelatedProducts.module.css";
 function RelatedProducts({ product_data }) {
   const ctx = useContext(ShopContext);
 
-  const relatedProductsArr = ctx.filter(
+  const relatedProductsArr = ctx.all_products_data.filter(
     (prod) => prod.category === product_data.category
   );
 

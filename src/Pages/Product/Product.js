@@ -12,7 +12,9 @@ import RelatedProducts from "./RelatedProducts/RelatedProducts";
 function Product() {
   const ctx = useContext(ShopContext);
   const { product_ID } = useParams();
-  const product_data = ctx.find((prod) => prod.id === Number(product_ID));
+  const product_data = ctx.all_products_data.find(
+    (prod) => prod.id === Number(product_ID)
+  );
   return (
     <div className={classes["product"]}>
       <ProductPath product_data={product_data} />

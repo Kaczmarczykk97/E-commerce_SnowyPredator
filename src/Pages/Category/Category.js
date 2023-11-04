@@ -10,8 +10,8 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 function Category(props) {
-  const ctx = useContext(ShopContext);
-  const amount = ctx.filter((prod) => {
+  const { all_products_data } = useContext(ShopContext);
+  const amount = all_products_data.filter((prod) => {
     return prod.category === props.category;
   }).length;
 
@@ -27,7 +27,7 @@ function Category(props) {
         </div>
       </div>
       <div className={classes["category-products"]}>
-        {ctx.map((prod, i) => {
+        {all_products_data.map((prod, i) => {
           if (props.category === prod.category) {
             return (
               <Item

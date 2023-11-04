@@ -63,9 +63,9 @@ function ProductDescription(props) {
             activeTab === "2" ? classes["tab_content--active"] : ""
           }`}
         >
-          {product_data.parameters.map((parameter) => {
+          {product_data.parameters.map((parameter, i) => {
             return (
-              <div>
+              <div key={`parameter_${i}`}>
                 <p className={classes["parameter"]}>{parameter.parameter}:</p>
                 <p>{parameter.value}</p>
               </div>
@@ -77,9 +77,9 @@ function ProductDescription(props) {
             activeTab === "3" ? classes["tab_content--active"] : ""
           }`}
         >
-          {product_data.review.map((rev) => {
+          {product_data.review.map((rev, i) => {
             return (
-              <div className={classes["review"]}>
+              <div className={classes["review"]} key={`review_${i}`}>
                 <div className={classes["img_container"]}>
                   <img src={randomUserImgGenerator().img} alt="anon" />
                 </div>
