@@ -1,0 +1,132 @@
+.cartProducts {
+  padding: 12.5rem 10rem;
+  /* background-color: rgb(228, 227, 227) */
+}
+
+.cartProducts hr {
+  height: 1px;
+  background-color: rgba(228, 227, 227, 0.85);
+  border: none;
+}
+
+.cartProducts_labels {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 7.5rem;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cartProducts_container {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.productIcon {
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.icon_remove {
+  font-size: 2rem;
+  margin: 0 4rem;
+  cursor: pointer;
+}
+
+.quantity {
+  width: 5rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.totalPrice_container {
+  width: 30rem;
+  margin-left: auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.totalPrice_container p {
+  font-size: 1.4rem;
+}
+
+.totalPrice {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.totalPrice h2 {
+  font-size: 1.8rem;
+}
+
+.totalPrice_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.totalPrice_item p {
+  font-size: 1.4rem;
+}
+
+.totalPrice button {
+  width: 15rem;
+  height: 3.5rem;
+  background-color: #e41936;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 1px solid #282125;
+  cursor: pointer;
+  will-change: transform;
+  transition: all 0.3s;
+  margin: 0 auto 2rem auto;
+}
+
+.totalPrice button:hover {
+  background-color: #282125;
+  color: #e41936;
+  transform: skew(-10deg);
+}
+
+.promoCode_inputBox {
+  background-color: rgba(228, 227, 227, 0.85);
+  padding: 1rem;
+}
+
+.promoCode_inputBox input {
+  border: none;
+  background-color: transparent;
+  color: #282125;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  transition: all 1s;
+}
+
+.promoCode_inputBox input:focus {
+  outline: none;
+  background: rgba(228, 25, 54, 0.75);
+  color: #fff;
+}
+
+.promoCode_inputBox input:focus::placeholder {
+  color: #fff;
+}
+
+.promoCode_inputBox button {
+  width: 7.5rem;
+  padding: 0.5rem;
+  background: rgb(228, 25, 54);
+  border: 1px solid #282125;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -136,7 +136,7 @@
   color: #e41936;
 }
 
-button {
+.product_info-container button {
   width: 30rem;
   height: 5.5rem;
   background-color: #e41936;
@@ -149,7 +149,7 @@ button {
   transition: all 0.3s;
 }
 
-button:hover {
+.product_info-container button:hover {
   background-color: #282125;
   color: #e41936;
   transform: skew(-10deg);

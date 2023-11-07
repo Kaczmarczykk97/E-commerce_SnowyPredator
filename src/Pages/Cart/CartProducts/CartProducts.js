@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import ShopContext from "../../Context/ShopContext";
+import ShopContext from "../../../Context/ShopContext";
 
 import classes from "./CartProducts.module.css";
 import { ImBin2 } from "react-icons/im";
@@ -23,7 +23,9 @@ function CartProducts() {
         if (cartItems[prod.id] > 0) {
           return (
             <div key={i}>
-              <div className={classes["cartProducts_container"]}>
+              <div
+                className={`${classes["cartProducts_container"]} ${classes["cartProducts_labels"]}`}
+              >
                 <img
                   src={prod.img}
                   className={classes["productIcon"]}
@@ -46,7 +48,37 @@ function CartProducts() {
             </div>
           );
         }
+        return null;
       })}
+      <div className={classes["totalPrice_container"]}>
+        <div className={classes["totalPrice"]}>
+          <h2>Totals</h2>
+          <div>
+            <div className={classes["totalPrice_item"]}>
+              <p>Subtotal</p>
+              <p>PLN</p>
+            </div>
+            <hr />
+            <div className={classes["totalPrice_item"]}>
+              <p>Shipping</p>
+              <p>FREE</p>
+            </div>
+            <hr />
+            <div className={classes["totalPrice_item"]}>
+              <h3>Total</h3>
+              <h3>PLN</h3>
+            </div>
+          </div>
+          <button>Next</button>
+        </div>
+        <div className={classes["promoCode"]}>
+          <p>Promo code:</p>
+          <div className={classes["promoCode_inputBox"]}>
+            <input type="text" placeholder="Enter your code here" />
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

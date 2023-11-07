@@ -1,4 +1,4 @@
-import CartProducts from "../../Components/CartProducts/CartProducts";
+import CartProducts from "./CartProducts/CartProducts";
 import classes from "./Cart.module.css";
 
 function Cart() {
