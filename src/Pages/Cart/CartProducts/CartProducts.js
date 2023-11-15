@@ -6,7 +6,7 @@ import classes from "./CartProducts.module.css";
 import { ImBin2 } from "react-icons/im";
 
 function CartProducts() {
-  const { all_products_data, cartItems, removeFromCart } =
+  const { all_products_data, cartItems, removeFromCart, getTotal } =
     useContext(ShopContext);
   return (
     <div className={classes["cartProducts"]}>
@@ -56,17 +56,17 @@ function CartProducts() {
           <div>
             <div className={classes["totalPrice_item"]}>
               <p>Subtotal</p>
-              <p>PLN</p>
+              <p>{getTotal()} €</p>
             </div>
             <hr />
             <div className={classes["totalPrice_item"]}>
               <p>Shipping</p>
-              <p>FREE</p>
+              <p>15 €</p>
             </div>
             <hr />
             <div className={classes["totalPrice_item"]}>
-              <h3>Total</h3>
-              <h3>PLN</h3>
+              <h2>Total</h2>
+              <h2>{getTotal() + 15} €</h2>
             </div>
           </div>
           <button>Next</button>

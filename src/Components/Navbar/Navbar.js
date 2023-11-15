@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+
+import ShopContext from "../../Context/ShopContext";
 
 import classes from "./Navbar.module.css";
 
@@ -8,6 +11,8 @@ import { FaShoppingCart, FaSkiing, FaSnowboarding } from "react-icons/fa";
 import { GiSnowboard, GiClothes } from "react-icons/gi";
 
 function Navbar() {
+  const { getTotalCartItems } = useContext(ShopContext);
+  console.log(getTotalCartItems);
   return (
     <div className={classes.navbar}>
       <div className={classes["navbar-logo--wrapper"]}>
@@ -51,7 +56,7 @@ function Navbar() {
         <NavLink to="/cart">
           <FaShoppingCart className={classes["icon--cart"]} />
         </NavLink>
-        <div className={classes["cart--counter"]}>0</div>
+        <div className={classes["cart--counter"]}>{getTotalCartItems()}</div>
       </div>
     </div>
   );
