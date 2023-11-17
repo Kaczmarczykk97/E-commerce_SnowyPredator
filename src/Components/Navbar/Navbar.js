@@ -5,7 +5,7 @@ import ShopContext from "../../Context/ShopContext";
 
 import classes from "./Navbar.module.css";
 
-import logo from "../imgs/logo-predator.png";
+import logo from "../imgs/logo_predator.png";
 
 import { FaShoppingCart, FaSkiing, FaSnowboarding } from "react-icons/fa";
 import { GiSnowboard, GiClothes } from "react-icons/gi";
@@ -49,9 +49,7 @@ function Navbar() {
       </ul>
       <div className={classes["nav-login--btn"]}>
         <NavLink to="/login">
-          <button className={classes.btn}>
-            <p>Login</p>
-          </button>
+          <button className={classes.btn} />
         </NavLink>
         <NavLink to="/cart">
           <FaShoppingCart className={classes["icon--cart"]} />

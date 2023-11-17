@@ -24,8 +24,9 @@
 }
 
 .textContainer .img-new-product {
-  height: 100%;
   grid-row: span 5;
+  height: 35rem;
+  margin-right: 2.5rem;
 }
 
 /*********************************************************/

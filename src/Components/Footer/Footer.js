@@ -1,6 +1,6 @@
 import classes from "./Footer.module.css";
 
-import logo from "../imgs/logo-predator.png";
+import logo from "../imgs/logo_predator.png";
 
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";

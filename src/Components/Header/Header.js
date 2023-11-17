@@ -1,8 +1,8 @@
 import classes from "./Header.module.css";
 
-import headerIcon from "../imgs/header-icon.png";
-import snowboard from "../imgs/header_6.png";
-import predatorText from "../imgs/predatorText.png";
+import headerIcon from "../imgs/header_icon.png";
+import snowboard from "../imgs/header_1.png";
+import predatorText from "../imgs/predator_text.png";
 
 function Header() {
   return (

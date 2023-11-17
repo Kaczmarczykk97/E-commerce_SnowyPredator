@@ -12,7 +12,7 @@
       rgba(228, 227, 227, 0.2)
     ),
     url(../imgs/offer_background.png);
-  background-color: rgb(228, 227, 227, 0.75);
+  background-color: rgb(40, 33, 37, 0.2);
   background-size: cover;
 }
 
@@ -25,9 +25,9 @@
 .offer-left h2 {
   font-size: 5rem;
   font-weight: 600;
-  color: #282125;
+  color: #fff;
   line-height: 1.2;
-  text-shadow: 2px 2px #e41936;
+  text-shadow: 2px 2px #282125;
 }
 
 .offer-left p {
@@ -39,14 +39,22 @@
 .offer-left button {
   width: 28rem;
   height: 7rem;
-  border: none;
+  border: 1px solid #282125;
+  box-shadow: 0 0 1.5rem #282125;
   border-radius: 4rem;
   background-color: #e41936;
   font-size: 2.2rem;
   color: #fff;
   font-weight: 500;
   margin-top: 3rem;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+.offer-left button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 1rem #fff;
+  border: 1px solid #fff;
 }
 
 .offer-right {
