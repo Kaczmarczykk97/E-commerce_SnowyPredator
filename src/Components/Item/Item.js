@@ -1,11 +1,15 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 
 import classes from "./Item.module.css";
+import ShopContext from "../../Context/ShopContext";
 
 function Item(props) {
-  function scrollTop() {
-    window.scrollTo(0, 0);
-  }
+  const { scrollTop } = useContext(ShopContext);
+
+  // function scrollTop() {
+  //   window.scrollTo(0, 0);
+  // }
 
   return (
     <div className={classes.item}>

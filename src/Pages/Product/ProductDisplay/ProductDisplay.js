@@ -1,5 +1,5 @@
 // import all_products_data from "../../../Components/imgs/all_products/all_products_data";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import classes from "./ProductDisplay.module.css";
 
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
@@ -9,6 +9,10 @@ const clothesSize = ["S", "M", "L", "XL"];
 const equipmentsSize = ["150", "155", "160", "165"];
 
 function ProductDisplay(props) {
+  const [rating, setRating] = useState([]);
+  useEffect(() => {
+    setRating(generateRating());
+  }, []);
   const { product_data } = props;
 
   const { addToCart } = useContext(ShopContext);
@@ -47,7 +51,7 @@ function ProductDisplay(props) {
       <div className={classes["product_info-container"]}>
         <h2>{product_data.name}</h2>
         <div className={classes["rating_stars"]}>
-          {generateRating().map((star, index) => (
+          {rating.map((star, index) => (
             <span key={index}>{star}</span>
           ))}
           <p className={classes["rating_amount"]}>

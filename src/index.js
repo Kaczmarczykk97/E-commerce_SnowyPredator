@@ -22,6 +22,10 @@ const getDefaultCart = () => {
 function Main() {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+
   function addToCart(prodId) {
     setCartItems((prev) => ({ ...prev, [prodId]: prev[prodId] + 1 }));
   }
@@ -69,6 +73,7 @@ function Main() {
   const contextValue = {
     all_products_data,
     cartItems,
+    scrollTop,
     addToCart,
     removeFromCart,
     getTotal,

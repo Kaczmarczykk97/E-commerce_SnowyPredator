@@ -154,3 +154,7 @@
   color: #e41936;
   transform: skew(-10deg);
 }
+
+.product_info-container button:active {
+  transform: skew(-10deg) scale(0.9);
+}

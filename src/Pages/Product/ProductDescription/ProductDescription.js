@@ -10,7 +10,8 @@ function ProductDescription(props) {
   const { product_data } = props;
 
   const randomUserImgGenerator = function () {
-    const randomNumber = Math.floor(Math.random() * 17) + 1;
+    const randomNumber =
+      Math.floor(Math.random() * random_users_imgs.length) + 1;
     return random_users_imgs.find((user) => user.id === randomNumber);
   };
 
