@@ -2,18 +2,12 @@ import { useState } from "react";
 
 import classes from "./ProductDescription.module.css";
 import { BsStarFill } from "react-icons/bs";
-
-import random_users_imgs from "../../../Components/imgs/random_users_imgs/random_users_imgs";
+import userImg from "../../../Components/imgs/user.png";
 
 function ProductDescription(props) {
-  const [activeTab, setActiveTab] = useState("1");
   const { product_data } = props;
 
-  const randomUserImgGenerator = function () {
-    const randomNumber =
-      Math.floor(Math.random() * random_users_imgs.length) + 1;
-    return random_users_imgs.find((user) => user.id === randomNumber);
-  };
+  const [activeTab, setActiveTab] = useState("1");
 
   const activeTabHandler = function (e) {
     const current_tab = e.target.getAttribute("data-tab");
@@ -82,7 +76,7 @@ function ProductDescription(props) {
             return (
               <div className={classes["review"]} key={`review_${i}`}>
                 <div className={classes["img_container"]}>
-                  <img src={randomUserImgGenerator().img} alt="anon" />
+                  <img src={userImg} alt="anon" />
                 </div>
                 <div className={classes["stars_column"]}>
                   <p>"{rev.text}"</p>

@@ -39,14 +39,16 @@ footer {
   list-style: none;
 }
 
-.footer-link {
+.footer-link a {
+  color: #fff;
+  display: inline-block;
   font-size: 2rem;
   will-change: transform;
   transition: all 0.5s;
   cursor: pointer;
 }
 
-.footer-link:hover {
+.footer-link a:hover {
   color: #e01717;
   transform: scale(1.15) skew(-10deg);
 }

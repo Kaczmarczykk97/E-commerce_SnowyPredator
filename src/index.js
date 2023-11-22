@@ -13,7 +13,7 @@ const getDefaultCart = () => {
   let cart = {};
 
   all_products_data.forEach((_, i) => {
-    cart[i] = 0;
+    cart[i + 1] = 0;
   });
 
   return cart;
@@ -33,19 +33,6 @@ function Main() {
   function removeFromCart(prodId) {
     setCartItems((prev) => ({ ...prev, [prodId]: prev[prodId] - 1 }));
   }
-
-  // function getTotal() {
-  //   let total = 0;
-  //   for (const item in cartItems) {
-  //     if (cartItems[item] > 0) {
-  //       let itemInfo = all_products_data.find((prod) => {
-  //         return prod.id === Number(item);
-  //       });
-  //       total += itemInfo.new_price * cartItems[item];
-  //     }
-  //     return total;
-  //   }
-  // }
 
   function getTotal() {
     let total = 0;

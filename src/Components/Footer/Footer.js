@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import classes from "./Footer.module.css";
 
 import logo from "../imgs/logo_predator.png";
@@ -14,11 +16,21 @@ function Footer() {
           <p>SnowyPredator</p>
         </div>
         <ul className={classes["footer-links"]}>
-          <li className={classes["footer-link"]}>About</li>
-          <li className={classes["footer-link"]}>Contact</li>
-          <li className={classes["footer-link"]}>Products</li>
-          <li className={classes["footer-link"]}>Shops</li>
-          <li className={classes["footer-link"]}>Terms</li>
+          <li className={classes["footer-link"]}>
+            <NavLink>About</NavLink>
+          </li>
+          <li className={classes["footer-link"]}>
+            <NavLink>Contact</NavLink>
+          </li>
+          <li className={classes["footer-link"]}>
+            <NavLink>Products</NavLink>
+          </li>
+          <li className={classes["footer-link"]}>
+            <NavLink>Shops</NavLink>
+          </li>
+          <li className={classes["footer-link"]}>
+            <NavLink>Terms</NavLink>
+          </li>
         </ul>
         <div className={classes["footer-socials"]}>
           <FaFacebookF className={classes["social-icon"]} />

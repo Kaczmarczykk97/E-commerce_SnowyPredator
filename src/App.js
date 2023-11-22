@@ -4,6 +4,7 @@ import Shop from "./Pages/Shop/Shop";
 import Cart from "./Pages/Cart/Cart";
 import Category from "./Pages/Category/Category";
 import Login from "./Pages/Login/Login";
+import Contact from "./Pages/Contact/Contact";
 import Product from "./Pages/Product/Product";
 
 import "./App.css";
@@ -24,6 +25,7 @@ function App() {
         { path: "/", element: <Shop /> },
         { path: "/cart", element: <Cart /> },
         { path: "/login", element: <Login /> },
+        { path: "/contact", element: <Contact /> },
         {
           path: "/snowboard",
           element: (

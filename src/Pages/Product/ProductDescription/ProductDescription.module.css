@@ -105,6 +105,7 @@
 .review .img_container img {
   max-height: 5.5rem;
   max-width: 5rem;
+  filter: brightness(0);
 }
 
 .review p {
