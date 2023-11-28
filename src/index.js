@@ -21,6 +21,7 @@ const getDefaultCart = () => {
 
 function Main() {
   const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [visibleProducts, setVisibleProducts] = useState(10);
 
   function scrollTop() {
     window.scrollTo(0, 0);
@@ -65,6 +66,8 @@ function Main() {
     removeFromCart,
     getTotal,
     getTotalCartItems,
+    visibleProducts,
+    setVisibleProducts,
   };
 
   return (

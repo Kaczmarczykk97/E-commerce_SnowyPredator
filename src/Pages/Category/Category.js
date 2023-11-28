@@ -10,7 +10,8 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 function Category(props) {
-  const { all_products_data } = useContext(ShopContext);
+  const { all_products_data, visibleProducts, setVisibleProducts } =
+    useContext(ShopContext);
   const [sortedProducts, setSortedProducts] = useState(all_products_data);
   const [sortOrder, setSortOrder] = useState("asc");
 
@@ -31,12 +32,18 @@ function Category(props) {
     setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"));
   };
 
+  const handleLoadMoreProducts = () => {
+    const newVisibleProducts = Math.min(visibleProducts + 10, amount);
+
+    setVisibleProducts(newVisibleProducts);
+  };
+
   return (
     <div className={classes["category"]}>
       <img src={props.banner} alt="banner" className={classes["banner"]} />
       <div className={classes["category-indexSort"]}>
         <p>
-          <span>Showing 1-10 results</span> of {amount} products
+          <span>Showing 1-{visibleProducts} results</span> of {amount} products
         </p>
         <div className={classes["category-sort"]} onClick={handleSortByPrice}>
           Sort by Price
@@ -47,27 +54,30 @@ function Category(props) {
           )}
         </div>
       </div>
+
       <div className={classes["category-products"]}>
-        {sortedProducts.map((prod, i) => {
-          if (props.category === prod.category) {
-            return (
-              <Item
-                key={i}
-                id={prod.id}
-                img={prod.img}
-                name={prod.name}
-                new_price={prod.new_price}
-                old_price={prod.old_price}
-              />
-            );
-          } else {
-            return null;
-          }
-        })}
+        {sortedProducts
+          .filter((prod) => props.category === prod.category)
+          .slice(0, visibleProducts)
+          .map((prod, i) => (
+            <Item
+              key={i}
+              id={prod.id}
+              img={prod.img}
+              name={prod.name}
+              new_price={prod.new_price}
+              old_price={prod.old_price}
+            />
+          ))}
       </div>
-      <div className={classes["category-more"]}>
-        More products <AiOutlineArrowRight className={classes["icon"]} />
-      </div>
+      {visibleProducts < amount && (
+        <div
+          className={classes["category-more"]}
+          onClick={handleLoadMoreProducts}
+        >
+          More products <AiOutlineArrowRight className={classes["icon"]} />
+        </div>
+      )}
     </div>
   );
 }
