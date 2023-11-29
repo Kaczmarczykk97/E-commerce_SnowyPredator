@@ -1,0 +1,27 @@
+.terms-wrapper {
+  padding: 12.5rem 25rem;
+  margin: 0 auto;
+  width: 50%;
+  background-color: #fff;
+  color: #000;
+}
+
+.terms-wrapper h2 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.paragraf-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.paragraf-container h3 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.paragraf-container p {
+  font-size: 1.4rem;
+}

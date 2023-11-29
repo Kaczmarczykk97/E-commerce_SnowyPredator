@@ -1,4 +1,7 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+
+import ShopContext from "../../Context/ShopContext";
 
 import classes from "./Footer.module.css";
 
@@ -8,6 +11,13 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 
 function Footer() {
+  const { scrollTop, setVisibleProducts } = useContext(ShopContext);
+
+  const reset = function () {
+    scrollTop();
+    setVisibleProducts(10);
+  };
+
   return (
     <footer>
       <div className={classes["footer-container"]}>
@@ -20,7 +30,9 @@ function Footer() {
             <NavLink>About</NavLink>
           </li>
           <li className={classes["footer-link"]}>
-            <NavLink>Contact</NavLink>
+            <NavLink to="/contact" onClick={reset}>
+              Contact
+            </NavLink>
           </li>
           <li className={classes["footer-link"]}>
             <NavLink>Products</NavLink>
@@ -29,7 +41,9 @@ function Footer() {
             <NavLink>Shops</NavLink>
           </li>
           <li className={classes["footer-link"]}>
-            <NavLink>Terms</NavLink>
+            <NavLink to="/terms" onClick={reset}>
+              Terms
+            </NavLink>
           </li>
         </ul>
         <div className={classes["footer-socials"]}>

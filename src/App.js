@@ -6,6 +6,7 @@ import Category from "./Pages/Category/Category";
 import Login from "./Pages/Login/Login";
 import Contact from "./Pages/Contact/Contact";
 import Product from "./Pages/Product/Product";
+import Terms from "./Pages/Terms/Terms";
 
 import "./App.css";
 
@@ -26,6 +27,7 @@ function App() {
         { path: "/cart", element: <Cart /> },
         { path: "/login", element: <Login /> },
         { path: "/contact", element: <Contact /> },
+        { path: "/terms", element: <Terms /> },
         {
           path: "/snowboard",
           element: (
