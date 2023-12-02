@@ -35,10 +35,24 @@ function Footer() {
             </NavLink>
           </li>
           <li className={classes["footer-link"]}>
-            <NavLink>Products</NavLink>
+            <NavLink to="/snowboard" onClick={reset}>
+              Snowboardig
+            </NavLink>
           </li>
           <li className={classes["footer-link"]}>
-            <NavLink>Shops</NavLink>
+            <NavLink to="/skiing" onClick={reset}>
+              Skiing
+            </NavLink>
+          </li>
+          <li className={classes["footer-link"]}>
+            <NavLink to="/accessories" onClick={reset}>
+              Accessories
+            </NavLink>
+          </li>
+          <li className={classes["footer-link"]}>
+            <NavLink to="/clothes" onClick={reset}>
+              Clothes
+            </NavLink>
           </li>
           <li className={classes["footer-link"]}>
             <NavLink to="/terms" onClick={reset}>

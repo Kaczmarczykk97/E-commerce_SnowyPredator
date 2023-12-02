@@ -1,0 +1,102 @@
+.startAdventure-container {
+  width: 80%;
+  height: max-content;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
+  grid-template-columns: minmax(40rem, 45rem) 1fr;
+  margin: 10rem auto;
+  /* background-color: rgba(228, 227, 227, 0.85); */
+  background-size: cover;
+}
+
+.textContainer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2.5rem 2rem 2.5rem 3.5rem;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem #e41936;
+}
+
+.textContainer-left h2 {
+  font-size: 3.25rem;
+  color: #fff;
+  text-shadow: 1px 1px #e41936;
+}
+
+.textContainer-left p {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #fff;
+}
+
+.textContainer-left ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-top: 1rem;
+}
+
+.textContainer-left ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 1px 1px #e41936;
+}
+
+.textContainer-left ul li .icon {
+  font-size: 3.25rem;
+  color: #fff;
+  background-color: #e41936;
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem #fff;
+}
+
+/* .imgContainer-right {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05)),
+    url("../../Components/imgs/start_adventure.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 2rem #282125;
+  transition: all 0.3s;
+}
+
+.imgContainer-right:hover {
+  transform: scale(1.1);
+} */
+
+.imgContainer-right {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 2rem #282125;
+}
+
+.imgContainer-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05)),
+    url("../../Components/imgs/start_adventure.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+}
+
+.imgContainer-right:hover::before {
+  transform: scale(1.1);
+}

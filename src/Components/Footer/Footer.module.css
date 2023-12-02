@@ -35,14 +35,14 @@ footer {
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.25rem;
   list-style: none;
 }
 
 .footer-link a {
   color: #fff;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.75rem;
   will-change: transform;
   transition: all 0.5s;
   cursor: pointer;
