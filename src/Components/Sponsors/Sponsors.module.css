@@ -1,0 +1,39 @@
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.sponsors-container h2 {
+  color: #252422;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+
+.sponsors-container hr {
+  width: 20rem;
+  background-color: #252422;
+  margin-bottom: 2.5rem;
+}
+
+.logos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.logo-wrapper img {
+  width: 100%;
+}

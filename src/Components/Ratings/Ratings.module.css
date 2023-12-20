@@ -1,0 +1,53 @@
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+
+.rating-container h2 {
+  color: #252422;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+}
+
+.rating-container hr {
+  width: 20rem;
+  background-color: #252422;
+  margin-bottom: 2.5rem;
+}
+
+.rating-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 5rem 2rem;
+  padding: 0 2.5rem 3.5rem 2.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3));
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #252422;
+}
+
+.rate img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  box-shadow: 0 0 1rem #252422;
+}
+
+.rate p {
+  margin-top: 7.5rem;
+}
