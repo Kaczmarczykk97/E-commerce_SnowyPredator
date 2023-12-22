@@ -6,14 +6,14 @@
   align-items: center;
   gap: 15rem;
   margin: 0 auto 15rem auto;
-  padding: 0 7.5rem;
-  background-image: linear-gradient(
-      rgba(228, 227, 227, 0.2),
-      rgba(228, 227, 227, 0.2)
-    ),
-    url(../imgs/offer_background.png);
-  background-color: rgb(40, 33, 37, 0.2);
+  padding: 2rem 7.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3)),
+    url(../imgs/exlusive_offer_bakcground.png);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem #282125;
 }
 
 .offer-left {
@@ -27,13 +27,14 @@
   font-weight: 600;
   color: #fff;
   line-height: 1.2;
-  text-shadow: 2px 2px #282125;
+  text-shadow: 3px 3px #282125;
 }
 
 .offer-left p {
   font-size: 2.2rem;
   font-weight: 600;
-  color: #282125;
+  color: #fff;
+  text-shadow: 2px 2px #e41936;
 }
 
 .offer-left button {
