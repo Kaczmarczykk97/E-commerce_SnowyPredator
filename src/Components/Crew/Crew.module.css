@@ -38,6 +38,7 @@ h3 {
   border-radius: 1rem;
   width: 60%;
   height: min-content;
+  margin-right: 10rem;
 }
 
 .team-member--container .container-left {
@@ -73,6 +74,10 @@ h3 {
 .container-right p {
   color: #fff;
   font-size: 1.5rem;
+}
+
+.odd-index {
+  margin-left: 20rem;
 }
 
 .odd-index .container-right {
