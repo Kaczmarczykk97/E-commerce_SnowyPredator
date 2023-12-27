@@ -9,6 +9,7 @@ import Offers from "../../Components/Offers/Offers";
 import NewProducts from "../../Components/NewProducts/NewProducts";
 import Ambassador from "../../Components/Ambassador/Ambassador";
 import MovieAboutShop from "../../Components/MovieAboutShop/MovieAboutShop";
+import SpecialEvent from "../../Components/SpecialEvent/SpecialEvent";
 import Ratings from "../../Components/Ratings/Ratings";
 import NewsLetter from "../../Components/NewsLetter/NewsLetter";
 
@@ -24,6 +25,7 @@ function Shop() {
       <NewProducts />
       <Ambassador />
       <MovieAboutShop />
+      <SpecialEvent />
       <Ratings />
       <NewsLetter />
     </div>

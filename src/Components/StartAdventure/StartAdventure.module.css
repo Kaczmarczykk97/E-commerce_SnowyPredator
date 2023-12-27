@@ -60,22 +60,6 @@
   box-shadow: 0 0 1rem #fff;
 }
 
-/* .imgContainer-right {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05)),
-    url("../../Components/imgs/start_adventure.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 2rem #282125;
-  transition: all 0.3s;
-}
-
-.imgContainer-right:hover {
-  transform: scale(1.1);
-} */
-
 .imgContainer-right {
   position: relative;
   overflow: hidden;
