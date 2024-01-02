@@ -7,6 +7,7 @@ import Login from "./Pages/Login/Login";
 import Contact from "./Pages/Contact/Contact";
 import Product from "./Pages/Product/Product";
 import Terms from "./Pages/Terms/Terms";
+import About from "./Pages/About/About";
 
 import "./App.css";
 
@@ -28,6 +29,7 @@ function App() {
         { path: "/login", element: <Login /> },
         { path: "/contact", element: <Contact /> },
         { path: "/terms", element: <Terms /> },
+        { path: "/about", element: <About /> },
         {
           path: "/snowboard",
           element: (

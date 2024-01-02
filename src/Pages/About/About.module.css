@@ -1,0 +1,107 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 15rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../../Components/imgs/about_header_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.about-header h2 {
+  font-size: 6rem;
+  color: #fff;
+  line-height: 1;
+  text-shadow: 3px 3px rgb(168, 59, 59);
+}
+
+.about-header h3 {
+  font-size: 2.75rem;
+  font-style: italic;
+  color: #fff;
+  text-shadow: 1px 1px rgb(168, 59, 59);
+  padding: 0 15rem;
+}
+
+.about-header button {
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  background-color: rgb(168, 59, 59);
+  color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 0 1rem #fff;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.about-header button:hover {
+  transform: scale(1.05);
+}
+
+.about-tab {
+  margin: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-tab h3 {
+  font-size: 3.25rem;
+  font-style: italic;
+}
+
+.about-tab hr {
+  width: 25rem;
+  height: 1px;
+  background-color: #000;
+}
+
+.about-tab--wrapper {
+  display: flex;
+}
+
+.about-tab--col {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.tab-col--top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: violet;
+  position: relative;
+}
+
+.tab-col--top-img {
+  width: 7.5rem;
+  height: 7.5rem;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tab-col--top p {
+  font-size: 2rem;
+  margin-top: 5rem;
+}

@@ -27,7 +27,9 @@ function Footer() {
         </div>
         <ul className={classes["footer-links"]}>
           <li className={classes["footer-link"]}>
-            <NavLink>About</NavLink>
+            <NavLink to="/about" onClick={reset}>
+              About
+            </NavLink>
           </li>
           <li className={classes["footer-link"]}>
             <NavLink to="/contact" onClick={reset}>
