@@ -23,27 +23,29 @@
   font-size: 6rem;
   color: #fff;
   line-height: 1;
-  text-shadow: 3px 3px rgb(168, 59, 59);
+  text-shadow: 3px 3px #e41936;
 }
 
 .about-header h3 {
   font-size: 2.75rem;
   font-style: italic;
   color: #fff;
-  text-shadow: 1px 1px rgb(168, 59, 59);
+  text-shadow: 1px 1px #e41936;
   padding: 0 15rem;
 }
 
 .about-header button {
   font-size: 2rem;
   padding: 2rem 3rem;
-  background-color: rgb(168, 59, 59);
+  background-color: #e41936;
   color: #fff;
   border: 1px solid #fff;
   box-shadow: 0 0 1rem #fff;
   margin-top: 3rem;
   cursor: pointer;
   transition: all 0.3s;
+  font-weight: 600;
+  font-family: "Caveat";
 }
 
 .about-header button:hover {
@@ -66,31 +68,40 @@
   width: 25rem;
   height: 1px;
   background-color: #000;
+  margin-top: 3px;
 }
 
 .about-tab--wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2.5rem;
+  width: 90%;
 }
 
 .about-tab--col {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  gap: 0.5rem;
+  min-width: 20rem;
+  max-width: 25rem;
 }
 
 .tab-col--top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: violet;
+  background-color: #252422;
   position: relative;
+  padding-bottom: 0.75rem;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0 0 2rem #252422;
 }
 
 .tab-col--top-img {
   width: 7.5rem;
   height: 7.5rem;
-  background-color: yellowgreen;
+  background-color: #e41936;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -99,9 +110,95 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+}
+
+.tab-col--top-img .icon {
+  font-size: 4.5rem;
+  color: #fff;
 }
 
 .tab-col--top p {
   font-size: 2rem;
   margin-top: 5rem;
+  color: #fff;
+}
+
+.tab-col--down {
+  background-color: rgba(37, 36, 34, 0.16);
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 0 2rem #252422;
+  height: 100%;
+}
+
+.tab-col--down ul {
+  list-style: none;
+  padding: 2rem 1rem;
+}
+
+.tab-col--down ul li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.tab-col--down ul li .arr {
+  font-size: 2rem;
+}
+
+.aboutSalesman-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  width: 85%;
+  background-color: #252422;
+  margin: 5rem auto;
+  padding: 3.5rem;
+}
+
+.aboutSalesman-container--col,
+.cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.aboutSalesman-container--col img {
+  max-width: fit-content;
+  max-height: 45rem;
+  margin: 0 auto;
+}
+
+.cell {
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 3rem;
+}
+
+.cell .icon-container {
+  width: 7.5rem;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+.cell .icon-container .icon {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.cell h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.cell p {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
 }
