@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import classes from "./Header.module.css";
 
 import headerIcon from "../imgs/header_icon.png";
@@ -31,14 +33,14 @@ function Header() {
           available in store
         </p>
 
-        <button className={classes["header--btn"]}>
+        <NavLink to="/about" className={classes["header--btn"]}>
           Start to be
           <img
             className={classes["btn--img"]}
             src={predatorText}
             alt="text img"
           />
-        </button>
+        </NavLink>
       </div>
     </div>
   );

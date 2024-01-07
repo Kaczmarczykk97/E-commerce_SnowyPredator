@@ -156,8 +156,13 @@ function About() {
             <div className={classes["icon-container"]}>
               <AiFillStar className={classes["icon"]} />
             </div>
-            <h3>TEXT</h3>
-            <p>Tekst</p>
+            <h3>1 Million+ Products Sold!</h3>
+            <p>
+              We're incredibly excited to announce that we've surpassed the
+              magical number of 1 million products sold! It's a monumental
+              milestone for us and a testament to the trust our customers place
+              in us. Thank you for sharing the winter adventures with us!
+            </p>
           </div>
         </div>
         <div className={classes["aboutSalesman-container--col"]}>
