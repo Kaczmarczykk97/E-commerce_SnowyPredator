@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { NavLink } from "react-router-dom";
 
 import classes from "./Header.module.css";
@@ -7,9 +10,12 @@ import snowboard from "../imgs/header_1.png";
 import predatorText from "../imgs/predator_text.png";
 
 function Header() {
+  useEffect(() => {
+    AOS.init({ delay: 1000, once: true });
+  }, []);
   return (
     <div className={classes.header}>
-      <div className={classes.textContainer}>
+      <div data-aos="fade-left" className={classes.textContainer}>
         <img
           src={snowboard}
           alt="new model of snowboard"

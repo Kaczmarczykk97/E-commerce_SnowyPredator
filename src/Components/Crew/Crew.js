@@ -1,47 +1,25 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import classes from "./Crew.module.css";
 
 import about_crew from "../imgs/crew/crew";
 
-// function Crew() {
-//   return (
-//     <div className={classes["crew-container"]}>
-//       <h2>Get Know Our Team</h2>
-//       <hr />
-//       <div className={classes["crew-wrapper"]}>
-//         <div className={classes["team-member--container"]}>
-//           <div className={classes["container-left"]}>
-//             <img src={crew_member} alt="team member" />
-//           </div>
-//           <div className={classes["container-right"]}>
-//             <div>
-//               <h3>#SNOWBOARDING</h3>
-//               <h3>#HOCKEY</h3>
-//             </div>
-//             <p>
-//               Hi, I'm Paweł Nowak, a passionate specialist in snowboarding and
-//               hockey gear. With a background as a former hockey player, I bring
-//               extensive knowledge to help you make the most of your experience
-//               on the snow or ice. I prioritize quality and functionality,
-//               ensuring you have the best equipment for optimal performance.
-//               Let's ride and play hard!
-//             </p>
-//             <h3>Paweł Nowak</h3>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 function Crew() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className={classes["crew-container"]}>
-      <h2>Get To Know Our Crew</h2>
+      <h2 data-aos="fade-right">Get To Know Our Crew</h2>
       <hr />
       <div className={classes["crew-wrapper"]}>
         {about_crew.map((member, i) => {
           return (
             <div
+              data-aos="fade-up"
               key={i}
               className={`${classes["team-member--container"]} ${
                 i % 2 !== 0 ? classes["odd-index"] : ""
@@ -55,8 +33,8 @@ function Crew() {
               </div>
               <div className={classes["container-right"]}>
                 <div>
-                  {member.hobby.map((h) => (
-                    <h3>{h}</h3>
+                  {member.hobby.map((h, i) => (
+                    <h3 key={i}>{h}</h3>
                   ))}
                 </div>
                 <p>{member.about}</p>

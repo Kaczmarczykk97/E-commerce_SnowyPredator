@@ -1,15 +1,30 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import classes from "./SpecialEvent.module.css";
+
 import { RxDoubleArrowRight } from "react-icons/rx";
 import special_event_offer from "../imgs/special_event_offer.png";
 
 function SpecialEvent() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className={classes["specialEvent-container"]}>
       <h2>SnowyPredator Winter Sports Festival</h2>
       <hr />
       <div className={classes["specialEvent-wrapper"]}>
-        <div className={classes["specialEvent-wrapper--left"]} />
-        <div className={classes["specialEvent-wrapper--right"]}>
+        <div
+          className={classes["specialEvent-wrapper--left"]}
+          data-aos="fade-left"
+        />
+        <div
+          className={classes["specialEvent-wrapper--right"]}
+          data-aos="fade-right"
+        >
           <img src={special_event_offer} alt="offer mark" />
 
           <h4>Freestyle Competitions:</h4>

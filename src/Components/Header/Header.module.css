@@ -11,6 +11,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+  overflow-x: hidden;
 }
 
 .textContainer {

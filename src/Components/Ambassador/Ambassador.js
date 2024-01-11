@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import classes from "./Ambassador.module.css";
+import "animate.css";
 
 import { TfiArrowCircleRight } from "react-icons/tfi";
 
@@ -18,7 +19,10 @@ function Ambassador() {
     <div className={classes["ambassador-container"]}>
       <div className={classes["ambassador-nav"]}>
         <h2>OUR AMBASSADOR - KAMIL STOCH</h2>
-        <button onClick={viewMoreHandler}>
+        <button
+          onClick={viewMoreHandler}
+          className="animate__animated animate__rubberBand animate__infinite animate__slower"
+        >
           View More
           <TfiArrowCircleRight className={classes["ambassador-nav--icon"]} />
         </button>

@@ -1,3 +1,7 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import classes from "./About.module.css";
 
 import salesman from "../../Components/imgs/about_salesman.png";
@@ -15,6 +19,9 @@ import {
 } from "react-icons/ai";
 
 function About() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className={classes["about-container"]}>
       <div className={classes["about-header"]}>
@@ -29,7 +36,7 @@ function About() {
         <h3>About SnowyPredator</h3>
         <hr />
         <div className={classes["about-tab--wrapper"]}>
-          <div className={classes["about-tab--col"]}>
+          <div data-aos="fade-up" className={classes["about-tab--col"]}>
             <div className={classes["tab-col--top"]}>
               <div className={classes["tab-col--top-img"]}>
                 <AiFillTool className={classes["icon"]} />
@@ -57,7 +64,7 @@ function About() {
               </ul>
             </div>
           </div>
-          <div className={classes["about-tab--col"]}>
+          <div data-aos="fade-down" className={classes["about-tab--col"]}>
             <div className={classes["tab-col--top"]}>
               <div className={classes["tab-col--top-img"]}>
                 <TbTargetArrow className={classes["icon"]} />
@@ -81,7 +88,7 @@ function About() {
               </ul>
             </div>
           </div>
-          <div className={classes["about-tab--col"]}>
+          <div data-aos="fade-up" className={classes["about-tab--col"]}>
             <div className={classes["tab-col--top"]}>
               <div className={classes["tab-col--top-img"]}>
                 <AiFillSignal className={classes["icon"]} />
@@ -109,7 +116,7 @@ function About() {
               </ul>
             </div>
           </div>
-          <div className={classes["about-tab--col"]}>
+          <div data-aos="fade-down" className={classes["about-tab--col"]}>
             <div className={classes["tab-col--top"]}>
               <div className={classes["tab-col--top-img"]}>
                 <AiFillWechat className={classes["icon"]} />
@@ -141,7 +148,7 @@ function About() {
       </div>
       <div className={classes["aboutSalesman-container"]}>
         <div className={classes["aboutSalesman-container--col"]}>
-          <div className={classes["cell"]}>
+          <div data-aos="fade-right" className={classes["cell"]}>
             <div className={classes["icon-container"]}>
               <AiFillTrophy className={classes["icon"]} />
             </div>
@@ -152,7 +159,7 @@ function About() {
               customer service.
             </p>
           </div>
-          <div className={classes["cell"]}>
+          <div data-aos="fade-right" className={classes["cell"]}>
             <div className={classes["icon-container"]}>
               <AiFillStar className={classes["icon"]} />
             </div>
@@ -168,7 +175,10 @@ function About() {
         <div className={classes["aboutSalesman-container--col"]}>
           <img src={salesman} alt="salesman" />
         </div>
-        <div className={classes["aboutSalesman-container--col"]}>
+        <div
+          data-aos="fade-left"
+          className={classes["aboutSalesman-container--col"]}
+        >
           <div className={classes["cell"]}>
             <div className={classes["icon-container"]}>
               <AiFillRocket className={classes["icon"]} />
@@ -180,7 +190,7 @@ function About() {
               ensure unforgettable shopping experiences.
             </p>
           </div>
-          <div className={classes["cell"]}>
+          <div data-aos="fade-left" className={classes["cell"]}>
             <div className={classes["icon-container"]}>
               <AiFillThunderbolt className={classes["icon"]} />
             </div>
