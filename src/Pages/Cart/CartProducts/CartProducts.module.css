@@ -11,7 +11,7 @@
 
 .cartProducts_labels {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 4fr 1fr 1fr 1fr 1fr;
   align-items: center;
   gap: 7.5rem;
   padding: 2rem 0;
@@ -25,7 +25,16 @@
 }
 
 .productIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 7.5rem;
+  max-width: 8.5rem;
   height: 6rem;
+}
+
+.productIcon img {
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -97,6 +106,8 @@
 }
 
 .promoCode_inputBox {
+  display: flex;
+  align-items: center;
   background-color: rgba(228, 227, 227, 0.85);
   padding: 1rem;
 }
@@ -129,4 +140,233 @@
   font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .cartProducts_labels,
+  .totalPrice h2 {
+    font-size: 1.5rem;
+  }
+
+  .cartProducts_labels {
+    gap: 5.5rem;
+  }
+
+  .cartProducts_container.cartProducts_labels {
+    font-size: 1.2rem;
+  }
+
+  .quantity {
+    width: 4rem;
+    height: 3rem;
+    font-size: 1.65rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .totalPrice_container {
+    width: 27.5rem;
+  }
+  .totalPrice button {
+    width: 12.5rem;
+    height: 3.25rem;
+    font-size: 1.75rem;
+  }
+
+  .icon_remove {
+    margin: 0 3.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .cartProducts_labels {
+    gap: 4.5rem;
+  }
+
+  .product_name {
+    font-size: 1rem;
+  }
+
+  .icon_remove {
+    font-size: 1.8rem;
+    margin: 0 3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .cartProducts {
+    padding: 12.5rem 7.5rem;
+  }
+
+  .cartProducts_labels {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .cartProducts {
+    padding: 12.5rem 5rem 10rem 5rem;
+  }
+
+  .cartProducts_labels {
+    gap: 3.5rem;
+  }
+
+  .cartProducts_labels,
+  .totalPrice h2 {
+    font-size: 1.25rem;
+  }
+
+  .totalPrice_container {
+    width: 25rem;
+    margin-top: 2.5rem;
+  }
+
+  .totalPrice {
+    gap: 0;
+  }
+
+  .totalPrice button {
+    width: 7.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .icon_remove {
+    margin: 0 2.5rem;
+  }
+
+  .promoCode_inputBox {
+    padding: 0.5rem;
+  }
+
+  .promoCode_inputBox input {
+    font-size: 1.5rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .cartProducts {
+    padding: 12.5rem 2.5rem 7.5rem 2.5rem;
+  }
+
+  .cartProducts_labels {
+    gap: 2.5rem;
+  }
+
+  .quantity {
+    width: 3rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: none;
+  }
+
+  .icon_remove {
+    font-size: 1.5rem;
+    margin: 0 2rem;
+  }
+
+  .totalPrice_container {
+    width: 21.5rem;
+    margin-top: 2rem;
+  }
+
+  .totalPrice_item p,
+  .promoCode p {
+    font-size: 1.1rem;
+  }
+
+  .promoCode_inputBox {
+    padding: 0.3rem;
+  }
+
+  .promoCode_inputBox input {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+
+  .promoCode_inputBox button {
+    width: 5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .cartProducts {
+    padding: 12.5rem 1.5rem 5rem 1.5rem;
+  }
+
+  .cartProducts_labels {
+    gap: 1.5rem;
+  }
+
+  .product_name {
+    font-size: 0.9rem;
+  }
+
+  .totalPrice_container {
+    width: 17.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .promoCode_inputBox {
+    padding: 0.15rem;
+  }
+
+  .promoCode_inputBox input {
+    font-size: 1rem;
+    padding: 0.15rem;
+  }
+
+  .promoCode_inputBox button {
+    width: 4rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .cartProducts {
+    padding: 12.5rem 1.5rem 2.5rem 1.5rem;
+  }
+
+  .productIcon {
+    min-width: 5.5rem;
+    max-width: 6.5rem;
+    height: 5rem;
+  }
+
+  .cartProducts_labels,
+  .totalPrice h2 {
+    font-size: 1rem;
+  }
+
+  .cartProducts_container.cartProducts_labels {
+    font-size: 1.15rem;
+  }
+
+  .quantity {
+    width: 2.5rem;
+    height: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .icon_remove {
+    font-size: 1.25rem;
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .productIcon {
+    min-width: 3.5rem;
+    max-width: 4.5rem;
+    height: 4rem;
+  }
+
+  .cartProducts_container.cartProducts_labels {
+    font-size: 1.1rem;
+  }
 }

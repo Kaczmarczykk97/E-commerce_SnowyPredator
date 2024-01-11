@@ -26,12 +26,10 @@ function CartProducts() {
               <div
                 className={`${classes["cartProducts_container"]} ${classes["cartProducts_labels"]}`}
               >
-                <img
-                  src={prod.img}
-                  className={classes["productIcon"]}
-                  alt="product icon"
-                />
-                <p>{prod.name}</p>
+                <div className={classes["productIcon"]}>
+                  <img src={prod.img} alt="product icon" />
+                </div>
+                <p className={classes["product_name"]}>{prod.name}</p>
                 <p>{prod.new_price}</p>
                 <button className={classes["quantity"]}>
                   {cartItems[prod.id]}

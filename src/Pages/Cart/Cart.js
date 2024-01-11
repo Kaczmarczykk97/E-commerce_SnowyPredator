@@ -1,9 +1,8 @@
 import CartProducts from "./CartProducts/CartProducts";
-import classes from "./Cart.module.css";
 
 function Cart() {
   return (
-    <div className={classes["cart"]}>
+    <div>
       <CartProducts />
     </div>
   );
