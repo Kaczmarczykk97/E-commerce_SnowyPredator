@@ -36,112 +36,116 @@ function About() {
         <h3>About SnowyPredator</h3>
         <hr />
         <div className={classes["about-tab--wrapper"]}>
-          <div data-aos="fade-up" className={classes["about-tab--col"]}>
-            <div className={classes["tab-col--top"]}>
-              <div className={classes["tab-col--top-img"]}>
-                <AiFillTool className={classes["icon"]} />
+          <div className={classes["about-tab--row"]}>
+            <div data-aos="fade-up" className={classes["about-tab--col"]}>
+              <div className={classes["tab-col--top"]}>
+                <div className={classes["tab-col--top-img"]}>
+                  <AiFillTool className={classes["icon"]} />
+                </div>
+                <p>Support:</p>
               </div>
-              <p>Support:</p>
+              <div className={classes["tab-col--down"]}>
+                <ul>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Fast and
+                    friendly online support 24/7
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Secure and
+                    easy returns
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} />{" "}
+                    Satisfaction guarantee for every customer
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Dedicated
+                    phone assistance
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div className={classes["tab-col--down"]}>
-              <ul>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Fast and
-                  friendly online support 24/7
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Secure and
-                  easy returns
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Satisfaction
-                  guarantee for every customer
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Dedicated
-                  phone assistance
-                </li>
-              </ul>
+            <div data-aos="fade-down" className={classes["about-tab--col"]}>
+              <div className={classes["tab-col--top"]}>
+                <div className={classes["tab-col--top-img"]}>
+                  <TbTargetArrow className={classes["icon"]} />
+                </div>
+                <p>Quality:</p>
+              </div>
+              <div className={classes["tab-col--down"]}>
+                <ul>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} />{" "}
+                    High-quality products from renowned brands
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Thorough
+                    testing of equipment before introducing it to the offer
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Innovative
+                    solutions for demanding winter sports enthusiasts
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div data-aos="fade-down" className={classes["about-tab--col"]}>
-            <div className={classes["tab-col--top"]}>
-              <div className={classes["tab-col--top-img"]}>
-                <TbTargetArrow className={classes["icon"]} />
+          <div className={classes["about-tab--row"]}>
+            <div data-aos="fade-up" className={classes["about-tab--col"]}>
+              <div className={classes["tab-col--top"]}>
+                <div className={classes["tab-col--top-img"]}>
+                  <AiFillSignal className={classes["icon"]} />
+                </div>
+                <p>Experience:</p>
               </div>
-              <p>Quality:</p>
-            </div>
-            <div className={classes["tab-col--down"]}>
-              <ul>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> High-quality
-                  products from renowned brands
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Thorough
-                  testing of equipment before introducing it to the offer
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Innovative
-                  solutions for demanding winter sports enthusiasts
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div data-aos="fade-up" className={classes["about-tab--col"]}>
-            <div className={classes["tab-col--top"]}>
-              <div className={classes["tab-col--top-img"]}>
-                <AiFillSignal className={classes["icon"]} />
+              <div className={classes["tab-col--down"]}>
+                <ul>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Over 10
+                    years of experience in the winter sports industry
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Trusted
+                    reviews from experts and satisfied customers
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Active
+                    collaboration with professional athletes
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Unique
+                    atmosphere and passion in every product
+                  </li>
+                </ul>
               </div>
-              <p>Experience:</p>
             </div>
-            <div className={classes["tab-col--down"]}>
-              <ul>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Over 10
-                  years of experience in the winter sports industry
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Trusted
-                  reviews from experts and satisfied customers
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Active
-                  collaboration with professional athletes
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Unique
-                  atmosphere and passion in every product
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div data-aos="fade-down" className={classes["about-tab--col"]}>
-            <div className={classes["tab-col--top"]}>
-              <div className={classes["tab-col--top-img"]}>
-                <AiFillWechat className={classes["icon"]} />
+            <div data-aos="fade-down" className={classes["about-tab--col"]}>
+              <div className={classes["tab-col--top"]}>
+                <div className={classes["tab-col--top-img"]}>
+                  <AiFillWechat className={classes["icon"]} />
+                </div>
+                <p>Community:</p>
               </div>
-              <p>Community:</p>
-            </div>
-            <div className={classes["tab-col--down"]}>
-              <ul>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Active
-                  involvement in the sports community
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Organization
-                  of events and contests for our customers
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Partner
-                  programs supporting local initiatives
-                </li>
-                <li>
-                  <RxDoubleArrowRight className={classes["arr"]} /> Inspiring
-                  stories and advice from our community
-                </li>
-              </ul>
+              <div className={classes["tab-col--down"]}>
+                <ul>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Active
+                    involvement in the sports community
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} />{" "}
+                    Organization of events and contests for our customers
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Partner
+                    programs supporting local initiatives
+                  </li>
+                  <li>
+                    <RxDoubleArrowRight className={classes["arr"]} /> Inspiring
+                    stories and advice from our community
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -177,7 +181,7 @@ function About() {
         </div>
         <div
           data-aos="fade-left"
-          className={classes["aboutSalesman-container--col"]}
+          className={`${classes["aboutSalesman-container--col"]} ${classes["colChangeToRow"]}`}
         >
           <div className={classes["cell"]}>
             <div className={classes["icon-container"]}>
