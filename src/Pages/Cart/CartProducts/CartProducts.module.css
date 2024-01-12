@@ -366,7 +366,7 @@
     height: 4rem;
   }
 
-  .cartProducts_container.cartProducts_labels {
-    font-size: 1.1rem;
+  .cartProducts_container.cartProducts_labels p {
+    font-size: 0.9rem;
   }
 }
