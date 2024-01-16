@@ -18,6 +18,11 @@ import skiing_banner from "./Components/imgs/Skiing_banner.jpg";
 import accessories_banner from "./Components/imgs/Accessories_banner.jpg";
 import clothes_banner from "./Components/imgs/Clothes_banner.jpg";
 
+import snowboarding_mobile_banner from "./Components/imgs/Snowboarding_mobile_banner.jpg";
+import skiing_mobile_banner from "./Components/imgs/Skiing_mobile_banner.jpg";
+import accesories_mobile_banner from "./Components/imgs/Accesories_mobile_banner.jpg";
+import clothes_mobile_banner from "./Components/imgs/Clothes_mobile_banner.jpg";
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -33,22 +38,42 @@ function App() {
         {
           path: "/snowboard",
           element: (
-            <Category banner={snowboarding_banner} category="snowboard" />
+            <Category
+              banner={snowboarding_banner}
+              mobileBanner={snowboarding_mobile_banner}
+              category="snowboard"
+            />
           ),
         },
         {
           path: "/skiing",
-          element: <Category banner={skiing_banner} category="skiing" />,
+          element: (
+            <Category
+              banner={skiing_banner}
+              mobileBanner={skiing_mobile_banner}
+              category="skiing"
+            />
+          ),
         },
         {
           path: "/accessories",
           element: (
-            <Category banner={accessories_banner} category="accessories" />
+            <Category
+              banner={accessories_banner}
+              mobileBanner={accesories_mobile_banner}
+              category="accessories"
+            />
           ),
         },
         {
           path: "/clothes",
-          element: <Category banner={clothes_banner} category="clothes" />,
+          element: (
+            <Category
+              banner={clothes_banner}
+              mobileBanner={clothes_mobile_banner}
+              category="clothes"
+            />
+          ),
         },
         {
           path: "/product",

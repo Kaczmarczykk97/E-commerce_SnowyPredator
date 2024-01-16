@@ -15,6 +15,10 @@ function Category(props) {
   const [sortedProducts, setSortedProducts] = useState(all_products_data);
   const [sortOrder, setSortOrder] = useState("asc");
 
+  function mobileBanner() {
+    return window.innerWidth < 500;
+  }
+
   const amount = all_products_data.filter((prod) => {
     return prod.category === props.category;
   }).length;
@@ -40,7 +44,15 @@ function Category(props) {
 
   return (
     <div className={classes["category"]}>
-      <img src={props.banner} alt="banner" className={classes["banner"]} />
+      {mobileBanner() ? (
+        <img
+          src={props.mobileBanner}
+          alt=" mobile banner"
+          className={classes["banner"]}
+        />
+      ) : (
+        <img src={props.banner} alt="banner" className={classes["banner"]} />
+      )}
       <div className={classes["category-indexSort"]}>
         <p>
           <span>Showing 1-{visibleProducts} results</span> of {amount} products
