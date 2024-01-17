@@ -1,4 +1,3 @@
-// import all_products_data from "../../../Components/imgs/all_products/all_products_data";
 import { useContext, useState, useEffect } from "react";
 import classes from "./ProductDisplay.module.css";
 

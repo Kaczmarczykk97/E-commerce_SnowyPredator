@@ -7,3 +7,15 @@
   text-decoration: none;
   color: #000;
 }
+
+@media (max-width: 750px) {
+  .product_path {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .product_path {
+    font-size: 1.2rem;
+  }
+}

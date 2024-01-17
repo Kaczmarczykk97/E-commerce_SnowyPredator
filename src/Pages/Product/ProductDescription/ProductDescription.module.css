@@ -1,5 +1,6 @@
 .product_description {
-  margin: 10rem 15rem;
+  margin: 10rem auto;
+  max-width: 80%;
 }
 
 .options_tab--container {
@@ -67,6 +68,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 2rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #e41936;
@@ -74,6 +76,7 @@
 .tab_content--2 div p {
   font-size: 1.6rem;
 }
+
 .tab_content--2 div .parameter {
   font-weight: 600;
   margin-left: 2rem;
@@ -127,4 +130,143 @@
 .star {
   font-size: 2rem;
   color: yellow;
+}
+
+@media (max-width: 1100px) {
+  .product_description {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 900px) {
+  .product_description {
+    max-width: 92.5%;
+    margin: 8.5rem auto;
+  }
+
+  .product_description--text_container {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .product_description {
+    max-width: 100%;
+  }
+
+  .options_tab--option {
+    width: 12.5rem;
+    height: 4rem;
+    font-size: 1.3rem;
+  }
+
+  .product_description--text_container {
+    padding: 2rem 1.5rem;
+  }
+
+  .tab_content--2 div p {
+    font-size: 1.4rem;
+  }
+
+  .review .img_container {
+    height: 4.5rem;
+    min-width: 4.5rem;
+    padding: 0.65rem;
+  }
+
+  .review .img_container img {
+    max-height: 4.5rem;
+    max-width: 4.5rem;
+  }
+
+  .review p {
+    font-size: 1.4rem;
+  }
+
+  .star {
+    font-size: 1.75rem;
+  }
+
+  .product_description--text_container p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+
+  .tab_content--2 div .parameter {
+    margin-left: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .options_tab--option {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  .product_description--text_container {
+    padding: 1rem;
+  }
+
+  .tab_content--2 div p {
+    font-size: 1.2rem;
+  }
+
+  .review .img_container {
+    height: 4rem;
+    min-width: 4rem;
+    padding: 0.5rem;
+  }
+
+  .review .img_container img {
+    max-height: 4rem;
+    max-width: 4rem;
+  }
+
+  .review p {
+    font-size: 1.3rem;
+  }
+
+  .star {
+    font-size: 1.5rem;
+  }
+
+  .product_description--text_container p {
+    font-size: 1.2rem;
+  }
+
+  .tab_content--2 div {
+    width: 85%;
+    gap: 1.25rem;
+  }
+
+  .tab_content--2 div .parameter {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .options_tab--option {
+    width: 8rem;
+  }
+
+  .review p {
+    font-size: 1.2rem;
+  }
+
+  .star {
+    font-size: 1.25rem;
+  }
+
+  .product_description--text_container p {
+    font-size: 1.15rem;
+  }
+
+  .tab_content--2 div {
+    gap: 0.75rem;
+  }
+
+  .tab_content--2 div .parameter {
+    margin-left: 0;
+  }
 }

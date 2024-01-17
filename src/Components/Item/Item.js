@@ -7,10 +7,6 @@ import ShopContext from "../../Context/ShopContext";
 function Item(props) {
   const { scrollTop } = useContext(ShopContext);
 
-  // function scrollTop() {
-  //   window.scrollTo(0, 0);
-  // }
-
   return (
     <div className={classes.item}>
       <Link to={`/product/${props.id}`}>

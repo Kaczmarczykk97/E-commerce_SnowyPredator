@@ -16,6 +16,29 @@
 
 .related_products--container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 5rem;
   padding: 0 5rem;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .related_products {
+    gap: 5rem;
+  }
+
+  .related_products--container {
+    padding: 0;
+  }
+
+  .related_products--container .item {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .related_products h2 {
+    font-size: 2.75rem;
+    text-shadow: 1px 1px #e41936;
+  }
 }
