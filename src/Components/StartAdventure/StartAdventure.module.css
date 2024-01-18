@@ -2,11 +2,8 @@
   width: 80%;
   height: max-content;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); */
-  grid-template-columns: minmax(40rem, 45rem) 1fr;
+  grid-template-columns: minmax(40rem, 45rem) minmax(28rem, 1fr);
   margin: 10rem auto;
-  /* background-color: rgba(228, 227, 227, 0.85); */
-  background-size: cover;
 }
 
 .textContainer-left {
@@ -63,6 +60,7 @@
 .imgContainer-right {
   position: relative;
   overflow: hidden;
+  border-radius: 1rem;
   box-shadow: 0 0 2rem #282125;
 }
 
@@ -83,4 +81,150 @@
 
 .imgContainer-right:hover::before {
   transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .startAdventure-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .startAdventure-container {
+    width: 95%;
+    grid-template-columns: minmax(30rem, 45rem) minmax(25rem, 1fr);
+    margin: 7.5rem auto;
+  }
+
+  .textContainer-left {
+    padding: 2rem 1.5rem;
+  }
+
+  .textContainer-left h2 {
+    font-size: 2.7rem;
+  }
+
+  .textContainer-left p {
+    font-size: 1.2rem;
+  }
+
+  .textContainer-left ul {
+    gap: 1rem;
+  }
+
+  .textContainer-left ul li {
+    gap: 1.25rem;
+    font-size: 1.35rem;
+  }
+
+  .textContainer-left ul li .icon {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .startAdventure-container {
+    grid-template-columns: minmax(25rem, 45rem) minmax(22rem, 1fr);
+  }
+
+  .textContainer-left {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .startAdventure-container {
+    grid-template-columns: minmax(24rem, 45rem) minmax(22rem, 1fr);
+  }
+
+  .textContainer-left {
+    padding: 1rem 0.75rem;
+    margin: 2.5rem 0.75rem 2.5rem 0;
+    gap: 0.25rem;
+  }
+
+  .textContainer-left h2 {
+    font-size: 2.2rem;
+  }
+
+  .textContainer-left ul li {
+    gap: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .textContainer-left ul li .icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .startAdventure-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+  }
+
+  .textContainer-left {
+    padding: 1.25rem 1rem;
+    margin: 0 2rem;
+  }
+
+  .textContainer-left h2 {
+    font-size: 2.5rem;
+  }
+
+  .textContainer-left p {
+    font-size: 1.3rem;
+  }
+
+  .textContainer-left ul li {
+    font-size: 1.5rem;
+  }
+
+  .textContainer-left ul li .icon {
+    font-size: 2.75rem;
+  }
+
+  .imgContainer-right {
+    height: 22.5rem;
+  }
+
+  .imgContainer-right::before {
+    background-position: top;
+  }
+}
+
+@media (max-width: 400px) {
+  .textContainer-left {
+    padding: 1.25rem 1rem;
+    margin: 0 2rem;
+  }
+
+  .textContainer-left h2 {
+    font-size: 2.25rem;
+  }
+
+  .textContainer-left p {
+    font-size: 1.2rem;
+  }
+
+  .textContainer-left ul li {
+    font-size: 1.25rem;
+  }
+
+  .textContainer-left ul li .icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .startAdventure-container {
+    width: 92.5%;
+  }
+
+  .textContainer-left {
+    padding: 1rem;
+    margin: 0 1.5rem;
+  }
 }
