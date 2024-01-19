@@ -1,5 +1,5 @@
 .newsletter {
-  width: 70%;
+  width: 75%;
   height: 75vh;
   display: flex;
   margin: 5rem auto 15rem auto;
@@ -13,6 +13,8 @@
   background-size: cover;
   background-position: bottom;
   position: relative;
+  box-shadow: 0 0 1rem #282125;
+  border-radius: 1rem;
 }
 
 .newsletter-container--text {
@@ -31,6 +33,7 @@
   color: #282125;
   line-height: 1.2;
   text-shadow: 2px 2px #01b1b1;
+  text-align: center;
 }
 
 .newsletter-container--text p {
@@ -44,6 +47,7 @@
 .newsletter-container--text div {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 32rem;
   height: 5rem;
   border: 1px solid #282125;
@@ -51,7 +55,7 @@
 }
 
 .newsletter-container--text input {
-  width: 20rem;
+  width: 65%;
   height: 5rem;
   border: none;
   outline: none;
@@ -62,7 +66,7 @@
 }
 
 .newsletter-container--text button {
-  width: 12rem;
+  width: 35%;
   height: 5rem;
   background-color: #01b1b1;
   color: #fff;
@@ -71,4 +75,187 @@
   border-radius: 5rem;
   text-shadow: 1px 1px #282125;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .newsletter {
+    width: 80%;
+  }
+
+  .newsletter-container--text h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .newsletter {
+    width: 85%;
+  }
+
+  .newsletter-container--text h2 {
+    font-size: 3.25rem;
+  }
+
+  .newsletter-container--text p {
+    font-size: 1.6rem;
+  }
+
+  .newsletter-container--text input {
+    height: 4rem;
+    font-size: 1.4rem;
+  }
+
+  .newsletter-container--text button {
+    width: 10rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .newsletter {
+    width: 90%;
+  }
+
+  .newsletter-container--text h2 {
+    font-size: 3rem;
+  }
+
+  .newsletter-container--text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .newsletter {
+    width: 92.5%;
+  }
+
+  .newsletter-container--text h2 {
+    font-size: 2.75rem;
+  }
+
+  .newsletter-container--text p {
+    font-size: 1.4rem;
+    margin: 1.5rem auto;
+  }
+
+  .newsletter-container--text div {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .newsletter-container--text {
+    width: 50%;
+    left: 0.4rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .newsletter {
+    background-image: linear-gradient(
+        10deg,
+        rgba(228, 227, 227, 0.85) 0%,
+        rgba(228, 227, 227, 0.85) 50%,
+        transparent 50%
+      ),
+      url(../imgs/newsletter.jpg);
+    width: 80%;
+    height: 85vh;
+  }
+
+  .newsletter-container--text {
+    width: 75%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: flex-end;
+  }
+
+  .newsletter-container--text h2 {
+    font-size: 3rem;
+  }
+
+  .newsletter-container--text p {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-container--text div {
+    width: 27.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .newsletter {
+    width: 87.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  .newsletter-container--text {
+    width: 85%;
+  }
+
+  .newsletter-container--text p {
+    font-size: 1.4rem;
+  }
+
+  .newsletter-container--text div {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .newsletter {
+    background-image: linear-gradient(
+        10deg,
+        rgba(228, 227, 227, 0.85) 0%,
+        rgba(228, 227, 227, 0.85) 45%,
+        transparent 55%
+      ),
+      url(../imgs/newsletter.jpg);
+  }
+
+  .newsletter-container--text h2 {
+    font-size: 2.75rem;
+  }
+
+  .newsletter-container--text p {
+    font-size: 1.3rem;
+  }
+
+  .newsletter-container--text div {
+    width: 22.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .newsletter-container--text h2 {
+    font-size: 2.5rem;
+  }
+
+  .newsletter-container--text div {
+    width: 20rem;
+    height: 3.5rem;
+  }
+
+  .newsletter-container--text input {
+    height: 3.5rem;
+    font-size: 1.3rem;
+  }
+
+  .newsletter-container--text button {
+    height: 3.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .newsletter {
+    height: 77.5vh;
+  }
+
+  .newsletter-container--text h2 {
+    font-size: 2.25rem;
+  }
 }
