@@ -17,7 +17,7 @@ function Ratings() {
                   backgroundImage: `url(${testimonial.img})`,
                 }}
               />
-              <p>"{testimonial.text}."</p>
+              <p>"{testimonial.text}"</p>
               <h3>{testimonial.name}</h3>
             </div>
           );

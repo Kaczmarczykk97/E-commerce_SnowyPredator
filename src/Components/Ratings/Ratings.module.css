@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem 0;
+  margin: 5rem auto;
 }
 
 .rating-container h2 {
@@ -11,20 +11,22 @@
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 4.5rem;
+  text-align: center;
+  padding: 0 1.5rem;
 }
 
 .rating-container hr {
-  width: 20rem;
+  width: 60rem;
   background-color: #252422;
   margin-bottom: 2.5rem;
 }
 
 .rating-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+  grid-template-columns: repeat(3, minmax(25rem, 27.5rem));
   justify-content: center;
-  gap: 4rem;
-  width: 100%;
+  column-gap: 6rem;
+  width: 90%;
 }
 
 .rate {
@@ -32,7 +34,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin: 7.5rem 2rem 5rem 2rem;
+  margin: 7.5rem 0 5rem 0;
   padding: 0 2.5rem 3.5rem 2.5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.3)),
     url("../imgs//testimonials//testimonial_background.png");
@@ -66,4 +68,115 @@
   font-size: 2.5rem;
   align-self: flex-start;
   margin-top: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .rating-container h2 {
+    font-size: 4.25rem;
+  }
+
+  .rating-wrapper {
+    column-gap: 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .rating-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(22.5rem, 25rem));
+    width: 91.3%;
+  }
+
+  .rating-container h2 {
+    font-size: 4rem;
+  }
+
+  .rating-container hr {
+    width: 50rem;
+  }
+
+  .rate {
+    margin: 6.5rem 0 5rem 0;
+    padding: 0 2rem 2.75rem 2rem;
+  }
+
+  .rate .container-img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .rate p {
+    margin-top: 7rem;
+    font-size: 1.4rem;
+  }
+
+  .rate h3 {
+    font-size: 2.25rem;
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .rating-container h2 {
+    font-size: 3.75rem;
+  }
+
+  .rate {
+    margin: 6.5rem 0 1.5rem 0;
+  }
+
+  .rate:last-child {
+    grid-column: span 2;
+    margin: 5rem 0 5rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .rating-container h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .rating-container h2 {
+    font-size: 3rem;
+  }
+
+  .rating-container hr {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+
+  .rating-container hr {
+    width: 30rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .rating-wrapper {
+    width: 85%;
+  }
+
+  .rating-container hr {
+    width: 25rem;
+  }
+
+  .rate {
+    padding: 0 2rem 1.5rem 2rem;
+  }
+
+  .rate p {
+    font-size: 1.3rem;
+  }
+
+  .rate h3 {
+    font-size: 2rem;
+  }
 }
