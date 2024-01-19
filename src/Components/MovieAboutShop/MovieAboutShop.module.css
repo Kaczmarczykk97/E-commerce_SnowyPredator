@@ -14,7 +14,7 @@
 }
 
 .movieAboutShop-container hr {
-  width: 20rem;
+  width: 40rem;
   background-color: #252422;
   margin-bottom: 2.5rem;
 }
@@ -30,4 +30,83 @@
 .movie-wrapper iframe {
   width: 65%;
   aspect-ratio: 1.8/1;
+}
+
+@media (max-width: 1200px) {
+  .movieAboutShop-container h2 {
+    font-size: 4.25rem;
+  }
+
+  .movie-wrapper iframe {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .movieAboutShop-container h2 {
+    font-size: 4rem;
+  }
+
+  .movie-wrapper iframe {
+    width: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  .movieAboutShop-container h2 {
+    font-size: 3.5rem;
+  }
+
+  .movieAboutShop-container hr {
+    width: 32.5rem;
+  }
+
+  .movie-wrapper iframe {
+    width: 82.5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .movieAboutShop-container h2 {
+    font-size: 3rem;
+  }
+
+  .movieAboutShop-container hr {
+    width: 27.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .movie-wrapper iframe {
+    width: 87.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .movieAboutShop-container h2 {
+    font-size: 2.75rem;
+  }
+
+  .movieAboutShop-container hr {
+    width: 25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .movie-wrapper iframe {
+    width: 92.5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .movieAboutShop-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .movieAboutShop-container hr {
+    width: 22.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .movie-wrapper iframe {
+    width: 95%;
+  }
 }
