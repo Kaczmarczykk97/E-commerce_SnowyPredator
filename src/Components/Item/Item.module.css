@@ -42,6 +42,12 @@
   text-decoration: line-through;
 }
 
+@media (max-width: 1200px) {
+  .item {
+    width: 28.5rem;
+  }
+}
+
 @media (max-width: 1100px) {
   .item {
     width: 27.5rem;
@@ -50,7 +56,7 @@
 
 @media (max-width: 1000px) {
   .item {
-    width: 25rem;
+    width: 24rem;
   }
 }
 
@@ -64,7 +70,17 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
+  .item {
+    width: 20rem;
+  }
+
+  .item img {
+    max-width: 22.5rem;
+  }
+}
+
+@media (max-width: 550px) {
   .item {
     width: 15rem;
   }

@@ -3,12 +3,10 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  height: 90vh;
-  overflow-x: hidden;
-  margin-top: 5rem;
+  margin: 5rem 2rem 10rem 2rem;
 }
 
-.popular h1 {
+.popular h2 {
   color: #252422;
   letter-spacing: 1px;
   font-family: "Playfair Display", serif;
@@ -22,7 +20,51 @@
 }
 
 .popular-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  width: 100%;
   margin-top: 4rem;
   gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .popular-item {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .popular-item {
+    grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .popular h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .popular h2 {
+    font-size: 3.5rem;
+  }
+
+  .popular hr {
+    width: 15rem;
+  }
+
+  .popular-item {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
+@media (max-width: 400px) {
+  .popular h2 {
+    font-size: 3.25rem;
+  }
+
+  .popular-item {
+    margin-top: 0;
+  }
 }
