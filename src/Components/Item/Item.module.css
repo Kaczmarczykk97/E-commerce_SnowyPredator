@@ -63,3 +63,25 @@
     max-width: 25rem;
   }
 }
+
+@media (max-width: 500px) {
+  .item {
+    width: 15rem;
+  }
+
+  .item img {
+    max-width: 15rem;
+  }
+
+  .item p {
+    font-size: 1.15rem;
+  }
+
+  .item-price--new {
+    font-size: 1.4rem;
+  }
+
+  .item-price--old {
+    font-size: 1.2rem;
+  }
+}
