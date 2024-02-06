@@ -20,7 +20,7 @@ const crew = [
     name: "Łucja Kowalska",
     hobby: ["#SKIING", "#HIKING"],
     about: `
-    Hello, I'm Łucja, a dedicated enthusiast of competitive skiing and an avid hiker in the mountains. With years of experience in high-performance skiing, I'm here to guide you to the perfect gear for both thrilling descents and scenic mountain hikes. My passion for outdoor adventures ensures that you'll find the ideal equipment to make your skiing and hiking experiences memorable. Let's conquer the slopes and explore the peaks together!`,
+    Hello, I'm Łucja, a dedicated enthusiast of competitive skiing and an avid hiker in the mountains. With years of experience in high-performance skiing, I'm here to guide you to the perfect gear for both thrilling descents and scenic mountain hikes. My passion for outdoor adventures ensures that you'll find the ideal equipment to make your skiing and hiking experiences memorable.`,
     background: background_2,
   },
   {
