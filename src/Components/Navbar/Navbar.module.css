@@ -60,6 +60,7 @@
   display: flex;
   align-items: center;
   gap: 4rem;
+  position: relative;
 }
 
 .btn {
@@ -126,4 +127,220 @@
 .icon--cart {
   font-size: 2.75rem;
   color: #fff;
+}
+
+/*MOBILE*/
+nav.activeMobile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(rgba(37, 36, 34, 0.8), rgba(37, 36, 34, 0.4));
+  box-shadow: 0 0 2rem #fff;
+  position: fixed;
+  top: 1.5rem;
+  right: 0;
+  width: 8.75rem;
+  border-radius: 1rem 0 0 1rem;
+  z-index: 999;
+}
+
+nav.activeMobile .nav-menu {
+  flex-direction: column;
+}
+
+nav.activeMobile .btn {
+  transform: translateX(-1rem);
+}
+
+nav.activeMobile .btn::after {
+  transform: translate(0);
+}
+
+nav.activeMobile .btn:hover::after {
+  transform: translate(0) scale(1.025);
+  box-shadow: 0 0 0.5rem #fff;
+}
+
+nav.activeMobile .navbar-logo--wrapper a .logo {
+  width: 6.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+nav.activeMobile .navbar-logo--wrapper a .logo:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+nav.activeMobile .navbar-logo--wrapper a p {
+  display: none;
+}
+
+nav.activeMobile .nav-login--btn {
+  flex-direction: column;
+  gap: 2rem;
+  transform: translateX(1rem);
+}
+
+nav.activeMobile .nav-login--btn .icon--cart {
+  transform: translateX(-1rem);
+}
+
+nav.activeMobile .cart--counter {
+  margin-top: 0;
+  margin-left: 0;
+  bottom: 0;
+  right: 2.5rem;
+  transform: translateY(50%);
+  position: absolute;
+}
+
+.mobileMenuIcon {
+  font-size: 4rem;
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(1rem);
+}
+
+@media (max-width: 1100px) {
+  .navbar-logo--wrapper a .logo {
+    width: 6.5rem;
+  }
+
+  .navbar-logo--wrapper a p {
+    font-size: 1.8rem;
+  }
+
+  .nav-menu .nav-menu--items a {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 12rem;
+    height: 4.5rem;
+  }
+
+  .btn::after {
+    width: 12rem;
+    height: 4.5rem;
+    font-size: 2.25rem;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar-logo--wrapper a .logo {
+    width: 6rem;
+  }
+
+  .nav-menu {
+    padding-inline-start: 0;
+  }
+
+  .nav-menu .nav-menu--items a {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    width: 10rem;
+    height: 4rem;
+  }
+
+  .btn::after {
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+  }
+
+  .icon--cart {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: space-around;
+    padding: 1rem 2rem 1rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar-logo--wrapper a {
+    gap: 0.5rem;
+  }
+
+  .navbar-logo--wrapper a .logo {
+    width: 5.5rem;
+  }
+
+  .navbar-logo--wrapper a p {
+    font-size: 1.6rem;
+  }
+
+  .nav-menu {
+    gap: 2.25rem;
+  }
+
+  .nav-menu .nav-menu--items a {
+    font-size: 1.65rem;
+  }
+
+  .nav-login--btn {
+    gap: 3rem;
+  }
+
+  .btn {
+    width: 8.5rem;
+    height: 3.75rem;
+  }
+
+  .btn::after {
+    width: 8.5rem;
+    height: 3.75rem;
+    font-size: 1.85rem;
+  }
+
+  .icon--cart,
+  .icon--cart {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-logo--wrapper a {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbar-logo--wrapper a .logo {
+    width: 4rem;
+  }
+
+  .navbar-logo--wrapper a p {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-login--btn {
+    gap: 2.5rem;
+  }
+
+  .btn {
+    width: 8rem;
+    height: 3.6rem;
+  }
+
+  .btn::after {
+    width: 8rem;
+    height: 3.6rem;
+    font-size: 1.7rem;
+  }
 }
