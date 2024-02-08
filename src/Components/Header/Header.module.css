@@ -293,8 +293,8 @@
 
 @media (max-width: 700px) {
   .textContainer {
-    margin: 5rem auto 0 auto;
-    width: 35rem;
+    margin: 5rem auto 0 2.5rem;
+    width: 30rem;
   }
 
   .heading--h2 {
@@ -328,7 +328,7 @@
   }
 
   .textContainer {
-    width: 30rem;
+    width: 27.5rem;
   }
 
   .heading--h2 {
@@ -348,9 +348,9 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .textContainer {
-    width: 27.5rem;
+    width: 25rem;
   }
 
   .heading--h2 {
@@ -376,10 +376,57 @@
 
 @media (max-width: 450px) {
   .textContainer {
-    width: 25rem;
+    width: 22.5rem;
+    margin: 5rem auto 0 2rem;
   }
 
   .heading--h2 {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .textContainer {
+    width: 20rem;
+    margin: 5rem auto 0 1rem;
+  }
+
+  .heading--h2 {
+    font-size: 2.15rem;
+  }
+
+  .textContainer--heading .span {
+    column-gap: 0.5rem;
+    width: 92.5%;
+  }
+}
+
+@media (max-width: 360px) {
+  .textContainer {
+    width: 18rem;
+    margin: 5rem auto 0 0.25rem;
+  }
+
+  .textContainer .img-new-product {
+    transform: rotate(90deg) translateX(-9rem);
+    height: 18.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .heading--h2 {
+    font-size: 2rem;
+  }
+
+  .text--1 {
+    font-size: 1.3rem;
+  }
+
+  .text--2 {
+    font-size: 1.15rem;
+  }
+
+  .textContainer--heading .span {
+    column-gap: 0.25rem;
+    width: 80%;
   }
 }
