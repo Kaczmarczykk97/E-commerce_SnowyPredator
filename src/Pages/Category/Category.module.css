@@ -97,6 +97,12 @@
   }
 }
 
+@media (max-width: 650px) {
+  .banner {
+    margin: 7.5rem auto 5rem auto;
+  }
+}
+
 @media (max-width: 600px) {
   .category-indexSort p {
     font-size: 1.3rem;
@@ -115,9 +121,7 @@
 
 @media (max-width: 500px) {
   .banner {
-    width: auto;
-    max-height: 100vh;
-    margin: 6rem auto 2.5rem auto;
+    margin: 1rem auto 5rem auto;
   }
 
   .category-products {
