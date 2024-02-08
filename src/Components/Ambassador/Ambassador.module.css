@@ -287,6 +287,11 @@
   .text-container--left-2 {
     padding: 1.75rem;
   }
+
+  .text-container--left-1 img,
+  .text-container--left-2 img {
+    width: 7rem;
+  }
 }
 
 @media (max-width: 500px) {
