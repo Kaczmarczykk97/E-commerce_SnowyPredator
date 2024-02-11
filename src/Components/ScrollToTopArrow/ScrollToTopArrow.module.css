@@ -1,0 +1,26 @@
+.arr-container {
+  position: fixed;
+  bottom: 0.25rem;
+  right: 0.75rem;
+  cursor: pointer;
+}
+
+.arr-icon {
+  font-size: 5rem;
+  color: #2d2d2d;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem #fff;
+  transition: all 0.3s;
+}
+
+.arr-icon:hover {
+  box-shadow: 0 0 0.75rem #e41936;
+  background-color: #e41936;
+}
+
+@media (max-width: 650px) {
+  .arr-icon {
+    font-size: 4.5rem;
+  }
+}
